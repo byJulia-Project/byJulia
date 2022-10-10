@@ -177,6 +177,7 @@ body{
   background: rgba(212, 0, 0, 0.6);
 }
 
+
 @media screen and (max-width: 600px){
   .hide{
     display: none;
@@ -198,7 +199,7 @@ body{
   }
 }
 
-@media screen and (max-width: 992px){
+@media screen and (min-width: 992px){
   .left-side{
     width: 50%; 
   }
