@@ -66,7 +66,7 @@ body{
   font-size: 2rem;
 }
 
-.login-email input{
+.campo-login input{
   text-align: center;
   height: 2.4rem;
   width: 20rem;
@@ -75,14 +75,6 @@ body{
   border-radius: 1.2rem;
 }
 
-.login-senha input{
-  text-align: center;
-  height: 2.4rem;
-  width: 20rem;
-  border: none;
-  background: rgba(242, 141, 141, 0.4);
-  border-radius: 1.2rem;
-}
 
 .button-form{
   height: 4rem;
@@ -148,7 +140,7 @@ body{
   color: black;
 }
 
-.usuario-cadastro input{
+.campo-cadastro input{
   text-align: center;
   height: 2.4rem;
   width: 20rem;
@@ -157,20 +149,3 @@ body{
   border-radius: 1.2rem;
 }
 
-.email-cadastro input{
-  text-align: center;
-  height: 2.4rem;
-  width: 20rem;
-  border: none;
-  background: rgba(242, 141, 141, 0.4);
-  border-radius: 1.2rem;
-}
-
-.senha-cadastro input{
-  text-align: center;
-  height: 2.4rem;
-  width: 20rem;
-  border: none;
-  background: rgba(242, 141, 141, 0.4);
-  border-radius: 1.2rem;
-}
