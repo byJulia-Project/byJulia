@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;0,800;0,900;1,600&display=swap');
+
+:root{
+  --font-title: 'Cormorant SC', sans serif;
+  --font-text: 'Montserrat', sans serif;
+  --color-login: #F2DA80;
+  --color-cadastro: #F4EBCB;
+}
+
+*{
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+body{
+  font-family: var(--font-text);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Parte de login do usuario*/
+.left-side{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: var(--color-login);
+}
+
+.left-side h1{
+  font-weight: 300;
+  font-size: 8rem;
+  border-bottom: 5px solid #F28D8D;
+  font-family: var(--font-title);
+}
+
+.login-form{
+  width: 50%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-form{
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 5.6rem;
+  color: black;
+}
+
+.login-form div{
+  margin-top: 0.9rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form div label{
+  font-size: 2rem;
+}
+
+.campo-login input{
+  text-align: center;
+  height: 2.4rem;
+  width: 20rem;
+  border: none;
+  background: rgba(242, 141, 141, 0.4);
+  border-radius: 1.2rem;
+}
+
+
+.button-form{
+  height: 4rem;
+  width: 13.6rem;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  background: rgba(242, 141, 141, 0.6);
+  border-radius: 2.4rem;
+  text-align: center;
+  transition: ease-in 0.3s;
+}
+
+.button-form:hover{
+  background: rgba(212, 0, 0, 0.6);
+}
+
+/*Parte de cadastro da pagina de login*/
+
+.right-side{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-color: var(--color-cadastro);
+}
+
+.right-side h1{
+  margin-bottom: 3.4rem;
+  font-weight: 300;
+  font-size: 8rem;
+  border-bottom: 5px solid #F28D8D;
+  font-family: var(--font-title);
+}
+
+.cadastro-form{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 7rem;
+}
+
+.cadastro-form div{
+  margin-top: 0.9rem;
+  margin-bottom: 1.1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cadastro-form div label{
+  font-size: 2rem;
+}
+
+.titulo-cadastro{
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 4rem;
+  color: black;
+}
+
+.campo-cadastro input{
+  text-align: center;
+  height: 2.4rem;
+  width: 20rem;
+  border: none;
+  background: rgba(242, 141, 141, 0.4);
+  border-radius: 1.2rem;
+}
+
