@@ -76,7 +76,7 @@ body{
 }
 
 
-.button-form{
+#button-login{
   height: 4rem;
   width: 13.6rem;
   border: none;
@@ -86,10 +86,21 @@ body{
   border-radius: 2.4rem;
   text-align: center;
   transition: ease-in 0.3s;
+  cursor: pointer;
 }
 
-.button-form:hover{
+#button-login:hover{
   background: rgba(212, 0, 0, 0.6);
+}
+
+#cadastro-text{
+  margin-bottom: 0.8rem;
+  display: none;
+}
+
+#cadastro-text a{
+  text-decoration: none;
+  color: black;
 }
 
 /*Parte de cadastro da pagina de login*/
@@ -149,3 +160,62 @@ body{
   border-radius: 1.2rem;
 }
 
+#button-cadastro{
+  height: 4rem;
+  width: 13.6rem;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  background: rgba(242, 141, 141, 0.6);
+  border-radius: 2.4rem;
+  text-align: center;
+  transition: ease-in 0.3s;
+  cursor: pointer;
+}
+
+#button-cadastro:hover{
+  background: rgba(212, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 600px){
+  .hide{
+    display: none;
+  }
+
+  .left-side{
+    width: 100%; 
+  }
+  
+  .login-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #cadastro-text{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .left-side{
+    width: 50%; 
+  }
+
+  .login-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-side{
+    width: 50%;
+  }
+
+  .cadastro-form{
+    width: 100%;
+    margin-top: 10rem;
+  }
+}
