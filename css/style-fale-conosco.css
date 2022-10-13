@@ -44,6 +44,15 @@ body > header{
   flex-wrap: wrap;
 }
 
+.header-list > a {
+  color: black;
+  transition: ease-in 0.4s;
+}
+
+.header-list > a:hover{
+  color: rgb(58, 58, 58);
+}
+
 li{
   list-style-type: none;
   margin-left: 1.4rem;
