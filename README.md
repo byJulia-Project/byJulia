@@ -72,4 +72,5 @@ git push -u origin <nome-da-branch>
 <strong>PRONTO!! Sua branch no GitHub e sua área de trabalho está configurada.</strong>
 
 ### Matheus
+### Waldemar
 
