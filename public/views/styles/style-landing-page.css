@@ -232,18 +232,17 @@ main {
 footer {
   width: 100%;
   background-color: var(--color-footer);
+  margin-top: 3rem;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding-top: 3.4rem;
-  padding-left: 3.4rem;
+  justify-content: center;
+  align-items: center;
 }
 
-ul{
-  list-style-type: none;
-  display: contents;
-
+footer > ul {
+  display: flex;
+  margin-top: 3rem;
+  align-items: center;
+  padding-left: 0;
 }
 
 #bloco-footer1 > h2{
@@ -311,7 +310,7 @@ a:hover{
   }
 
   #categorias > h1 {
-    margin-bottom: 6rem;
+    margin-bottom: 9rem;
   }
 
   #container-cards {
@@ -328,7 +327,6 @@ a:hover{
 
   .card-categorias > h2 {
     font-size: 1.5rem;
-    margin-top: 0.9rem;
     font-weight: 500;
   }
 
