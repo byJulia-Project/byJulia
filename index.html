@@ -15,26 +15,23 @@
     <title>byJulia</title>
   </head>
   <body>
+    <section id="promotion">OFERTA 100% em todos os produtos</section>
     <header>
       <h1 id="logo">byJulia</h1>
-      <ul class="header-list">
-        <li>Joias</li>
-        <li>Infantil</li>
-        <li>Casamento</li>
-        <li>Presentes</li>
+      <ul id="header-list">
+        <li>Home</li>
+        <li>Produtos</li>
+        <li>Sobre nós</li>
       </ul>
 
       <div class="header-list">
         <form id="menu-search">
-          <input
-            type="text"
-            id="products"
-            name="products"
-            placeholder="O que você procura hoje?"
+          <input 
+          type="text" id="products" name="products" placeholder="O que você procura hoje?"
           />
-          <label for="products"
-            ><i class="fa-solid fa-magnifying-glass"></i
-          ></label>
+          <label 
+          for="products"><i class="fa-solid fa-magnifying-glass"></i>
+          </label>
         </form>
         <a href="./public/views/pagina-login.html" target="_self"
           ><i class="fa-solid fa-user"></i
@@ -42,34 +39,31 @@
         <i class="fa-solid fa-cart-shopping"></i>
       </div>
     </header>
-    <img
-      id="image-header"
-      src="./public/img/image_header.jpg"
-      alt="duas alianças de ouro rodeadas de uma coroa de ouro"
-    />
 
-    <main>
-      <section id="models-session">
-        <h1>A marca feita para você!</h1>
-        <div class="container-models">
-          <img
-            id="model-left"
-            src="./public/img/model_left.jpg"
-            alt="modelo negro com as duas mãos tampando os olhos, dando enfase aos anéis "
-          />
-          <img
-            id="model-center"
-            src="./public/img/model_center.jpg"
-            alt="modelo indiana olhando para as lentes da câmera, com jóias em volta do pescoço e na cabeça"
-          />
-          <img
-            id="model-right"
-            src="./public/img/model_right.jpg"
-            alt="modelo negra olhando para as lentes da câmera, com pinturas corporais douradas e usando argolas no pescoço"
-          />
-        </div>
-      </section>
-    </main>
+    <section id="carousel">
+
+      <div class="carousel-image fade">
+        <img src="./public/img/banner.png" alt=""/>
+      </div>
+
+      <div class="carousel-image fade">
+        <img src="./public/img/banner2.png" alt=""/>
+      </div>
+
+      <div class="carousel-image fade">
+        <img src="./public/img/banner3.png" alt=""/>
+      </div>
+      
+    </section>
+
+
+    <div id="container-cont">
+      <span class="image-cont"></span>
+      <span class="image-cont"></span>
+      <span class="image-cont"></span>
+    </div>
+
+    
 
     <div class="pag-divisor"></div>
 
@@ -111,4 +105,5 @@
     </footer>
 
   </body>
+  <script src="./public/javascript/home.js" defer></script>
 </html>
