@@ -173,7 +173,10 @@ i {
 #categorias {
   width: 100%;
   margin-top: 4rem;
-  height: 60rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
 }
 
 #categorias > h1 {
@@ -184,45 +187,35 @@ i {
   color: black;
 }
 
-#categorias > #container-cards {
+#container-cards{
+  width: 100%;
+  margin-top: 0.8rem;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  margin-top: 15rem;
-}
-
-#container-cards > .card-categorias {
-  width: 30rem;
-  height: 30rem;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 0.9rem;
-  cursor: pointer;
+  justify-content: space-between;
+  flex-flow: wrap;
 }
 
 .card-categorias > h2 {
   font-size: 3rem;
   font-weight: 300;
   color: black;
+  text-align: center;
+  margin-bottom: 0.8rem;
 }
 
 .card-categorias > a > img {
-  width: 100%;
-  height: 100%;
+  width: 20rem;
+  height: 25rem;
   transition: ease-in-out 0.3s;
 }
 
 .card-categorias > a > img:hover {
-  opacity: 0.5;
-  transform: scale(1.055);
+  opacity: 0.8;
+  transform: scale(1.044);
 }
 
 /* FOOTER */
-
-/*footer*/
 
 footer {
   width: 100%;
@@ -235,7 +228,6 @@ footer {
 }
 
 footer > div > ul {
-  display:contents;
   margin-top: 3rem;
   align-items: center;
   padding-left: 0;
@@ -270,61 +262,11 @@ a:hover{
   color: grey;
 }
 
-@media screen and (max-width: 600px) {
-  .header-list {
+/**/
+@media screen and (max-width: 922px) {
+  
+  #header-list {
     display: none;
-  }
-
-  #models-session > h1 {
-    font-size: 3rem;
-  }
-
-  .container-models {
-    width: 100%;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .container-models > #model-left,
-  #model-center {
-    display: none;
-  }
-
-  .container-models > #model-right {
-    width: 100%;
-    position: relative;
-    left: 0rem;
-  }
-
-  #categorias {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0;
-  }
-
-  #categorias > h1 {
-    margin-bottom: 9rem;
-  }
-
-  #container-cards {
-    flex-direction: column;
-    height: 12rem;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .card-categorias > a > img {
-    width: 15rem;
-    height: 16rem;
-  }
-
-  .card-categorias > h2 {
-    font-size: 1.5rem;
-    font-weight: 500;
   }
 
   footer > ul {
