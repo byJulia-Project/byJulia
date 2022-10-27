@@ -3,7 +3,7 @@
 :root {
   --font-text: "Montserrat", sans serif;
   --font-title: "Cormorant SC", sans serif;
-  --color-primary: #f2da80;
+  --color-primary: #FFA67D;
   --color-secondary: #f28d8d;
   --color-footer: rgba(130, 142, 242, 0.5);
 }
@@ -20,6 +20,13 @@ body {
 }
 
 /* HEADER */
+#promotion{
+  text-align: center;
+  background-color: #725752;
+  color: #EAFDF8;
+  height: 1.5rem;
+}
+
 body > header {
   width: 100%;
   height: 9.375rem;
@@ -27,45 +34,43 @@ body > header {
   align-items: center;
   justify-content: space-between;
   background-color: var(--color-primary);
+  opacity: 0.6;
+  position: fixed;
+  top: 1;
+  z-index: 20;
+  transition: ease-in-out 1s;
+}
+
+body > header:hover{
+  opacity: 1;
 }
 
 #logo {
-  font-size: 7rem;
+  font-size: 4rem;
   font-family: var(--font-title);
   border-bottom: 2px solid var(--color-secondary);
   font-weight: 300;
   margin-bottom: 0.8rem;
 }
 
-.header-list {
+#header-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: space-between;  
 }
 
-.header-list > a {
-  color: black;
-  transition: ease-in 0.4s;
-}
-
-.header-list > a:hover {
-  color: rgb(58, 58, 58);
-}
-
-li {
-  margin-left: 1.4rem;
+#header-list > li{
+  list-style-type: none;
+  margin: 0.9rem;
+  font-size: 2rem;
+  color: #EAFDF8;
+  transition: 1s;
   cursor: pointer;
-  transition: ease-in-out 0.3s;
-  font-weight: 300;
-  font-size: 1.5rem;
-  padding: 0;
-  margin: 0;
-  text-align: justify;
 }
 
-li:hover {
-  color: #f28d8d;
+#header-list > li:hover{
+  color: #725752;
+  border-bottom: 1px solid #f28d8d;
 }
 
 #menu-search {
@@ -77,7 +82,7 @@ li:hover {
 }
 
 #menu-search > input {
-  color: var(--color-secondary);
+  color: #EAFDF8;
   background-color: var(--color-primary);
   font-weight: 700;
   font-size: 0.68rem;
@@ -108,70 +113,59 @@ i {
   margin: 0.4rem;
 }
 
-#image-header {
+#carousel {
+  margin: auto;
+  margin-top: 12rem;
   width: 100%;
-  height: 17.1rem;
-}
-
-/* SESSÃO PRINCIPAL */
-
-main {
-  width: 100%;
-  margin-top: 6.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#models-session {
-  width: 100%;
-}
-
-#models-session > h1 {
-  text-align: center;
-  font-family: var(--font-title);
-  color: var(--color-secondary);
-  font-weight: 700;
-  font-size: 4rem;
-}
-
-.container-models {
-  margin-top: 4rem;
+  height: 30rem;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: 2rem;
 }
 
-.container-models > #model-left {
-  width: 39.6rem;
-  height: 50rem;
-  position: relative;
-  left: 6rem;
-}
-
-.container-models > #model-center {
-  width: 29rem;
-  height: 46.81rem;
-  position: relative;
-  bottom: 3rem;
-  z-index: 4;
-}
-
-.container-models > #model-right {
-  width: 39.6rem;
-  height: 50rem;
-  position: relative;
-  right: 6rem;
-}
-
-.pag-divisor {
+#carousel > .carousel-image{
   width: 100%;
-  background-color: var(--color-primary);
-  opacity: 0.4;
-  height: 2rem;
-  margin-top: 2rem;
+  display: none;
+} 
+
+#container-cont{
+  width: 6rem;
+  height: 1rem;
+  margin-top: 0.9rem;
+  cursor: pointer;
+  display: flex;
+}
+
+#container-cont > .image-cont{
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  transition: 0.6s ease;
+}
+
+.active, .image-cont:hover{
+  background-color: #717171;
+}
+
+.fade{
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4;}
+  to {opacity: 1;}
+}
+
+.carousel-image > img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 25rem;
+  image-resolution: 500%;
+  box-shadow: 2px 2px 8px;
 }
 
 /* CATEGORIAS */
@@ -179,7 +173,10 @@ main {
 #categorias {
   width: 100%;
   margin-top: 4rem;
-  height: 60rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
 }
 
 #categorias > h1 {
@@ -187,47 +184,38 @@ main {
   font-family: var(--font-title);
   font-weight: 700;
   font-size: 4rem;
-  color: var(--color-secondary);
+  color: black;
 }
 
-#categorias > #container-cards {
+#container-cards{
+  width: 100%;
+  margin-top: 0.8rem;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  margin-top: 15rem;
-}
-
-#container-cards > .card-categorias {
-  width: 30rem;
-  height: 30rem;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 0.9rem;
-  cursor: pointer;
+  justify-content: space-between;
+  flex-flow: wrap;
 }
 
 .card-categorias > h2 {
   font-size: 3rem;
   font-weight: 300;
-  color: var(--color-secondary);
+  color: black;
+  text-align: center;
+  margin-bottom: 0.8rem;
 }
 
 .card-categorias > a > img {
-  width: 100%;
-  height: 100%;
+  width: 20rem;
+  height: 25rem;
   transition: ease-in-out 0.3s;
 }
 
 .card-categorias > a > img:hover {
-  opacity: 0.5;
+  opacity: 0.8;
+  transform: scale(1.044);
 }
 
 /* FOOTER */
-
-/*footer*/
 
 footer {
   width: 100%;
@@ -240,7 +228,6 @@ footer {
 }
 
 footer > div > ul {
-  display:contents;
   margin-top: 3rem;
   align-items: center;
   padding-left: 0;
@@ -275,61 +262,11 @@ a:hover{
   color: grey;
 }
 
-@media screen and (max-width: 600px) {
-  .header-list {
+/**/
+@media screen and (max-width: 922px) {
+  
+  #header-list {
     display: none;
-  }
-
-  #models-session > h1 {
-    font-size: 3rem;
-  }
-
-  .container-models {
-    width: 100%;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .container-models > #model-left,
-  #model-center {
-    display: none;
-  }
-
-  .container-models > #model-right {
-    width: 100%;
-    position: relative;
-    left: 0rem;
-  }
-
-  #categorias {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0;
-  }
-
-  #categorias > h1 {
-    margin-bottom: 9rem;
-  }
-
-  #container-cards {
-    flex-direction: column;
-    height: 12rem;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .card-categorias > a > img {
-    width: 15rem;
-    height: 16rem;
-  }
-
-  .card-categorias > h2 {
-    font-size: 1.5rem;
-    font-weight: 500;
   }
 
   footer > ul {
