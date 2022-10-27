@@ -1,26 +1,23 @@
-let slideIndex = 0;
+let bannerIndex = 0;
 showSlides();
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
 
 function showSlides(){
   let i;
-  let slides = document.getElementsByClassName("carousel-image");
-  let dots = document.getElementsByClassName("image-cont");
-  for(i = 0; i < slides.length; i++){
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
+  let imagens = document.getElementsByClassName("carousel-image");
+  let bolinha = document.getElementsByClassName("image-cont");
 
-  if(slideIndex > slides.length) slideIndex = 1;
-
-  for(i = 0; i<dots.length;i++){
-    dots[i].className = dots[i].className.replace(" active", "");
+  for(i = 0; i < imagens.length; i++){
+    imagens[i].style.display = "none";
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  bannerIndex++;
+
+  if(bannerIndex > imagens.length) bannerIndex = 1;
+
+  for(i = 0; i<bolinha.length;i++){
+    bolinha[i].className = bolinha[i].className.replace(" active", "");
+  }
+  imagens[bannerIndex-1].style.display = "block";
+  bolinha[bannerIndex-1].className += " active";
 
   setTimeout(showSlides, 5000);
 }
