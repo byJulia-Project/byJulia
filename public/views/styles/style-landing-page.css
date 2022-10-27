@@ -181,7 +181,7 @@ i {
   font-family: var(--font-title);
   font-weight: 700;
   font-size: 4rem;
-  color: var(--color-secondary);
+  color: black;
 }
 
 #categorias > #container-cards {
@@ -206,7 +206,7 @@ i {
 .card-categorias > h2 {
   font-size: 3rem;
   font-weight: 300;
-  color: var(--color-secondary);
+  color: black;
 }
 
 .card-categorias > a > img {
@@ -217,6 +217,7 @@ i {
 
 .card-categorias > a > img:hover {
   opacity: 0.5;
+  transform: scale(1.055);
 }
 
 /* FOOTER */
