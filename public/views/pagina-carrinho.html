@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style-pagina-carrinho.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 id="logo">byJulia</h1>
+        <ul class="header-list">
+          <li>Joias</li>
+          <li>Infantil</li>
+          <li>Casamento</li>
+          <li>Presentes</li>
+        </ul>  
+  
+        <div class="header-list">
+            <form id="menu-search">
+            <input
+              type="text"
+              id="products"
+              name="products"
+              placeholder="O que você procura hoje?"
+            <label><i class="fa-solid fa-magnifying-glass"></i></label>
+            </form>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>        
+      </header>      
+      <img src="../img/image_header.jpg" alt="">
+      <h2 class="nome_produto">Minha Sacola</h2>
+      <div class="meu_carrinho">
+        <div>
+          <div class="cabecalho">
+            <div class="cabecalho-anel">
+              <img src="../img/Rectangle 71.png" alt="anel de ouro com diamantes cravejados" class= "image-anel">
+              <div>Anel Ouro Amarelo e Diamante</div>
+             
+            </div>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <div class="produto-no-carrinho">
+            <div>
+              <button class="menos"><strong>-</strong></button>
+              <input inputmode="numeric" id="botao_quantidade">
+              <button class="mais"><strong>+</strong></button>
+            </div>
+            <div>R$ 4500,00</div>
+          </div>          
+        </div>
+        <div>
+          <div class="dados_compras">
+            <h3>Pedido</h3>
+            <h5>1 produto</h5>
+            <h5>Frete</h5>
+            <div class="total">
+            <h4>Total<h4>
+          
+              <p>R$ 4500,00</p>
+            </div>
+            <p>em até 3x sem juros de R$ 1500,00</p>
+            <p>R$ 1500,00 no boleto</p>
+            <button>FINALIZAR COMPRAS</button>
+            <br>
+            <a>Adicionar mais produtos</a>
+          </div>
+        </div>
+      </div>      
+</body>
+</html>

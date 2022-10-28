@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style-fale-conosco.css"/>
+    <title>byJulia Fale Conosco</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="logo">byJulia</h1>
+      <ul class="header-list">
+        <li>Joias</li>
+        <li>Infantil</li>
+        <li>Casamento</li>
+        <li>Presentes</li>
+      </ul>
+
+      <div class="header-list">
+        <form id="menu-search">
+          <input
+            type="text"
+            id="products"
+            name="products"
+            placeholder="O que você procura hoje?"
+          />
+          <label for="products"><i class="fa-solid fa-magnifying-glass"></i></label>
+        </form>
+        <a href="./pagina-login.html" target="_self"><i class="fa-solid fa-user"></i></a>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+    </header>
+    <img
+      src="../img/image_header.jpg"
+      alt="duas alianças de ouro rodeadas de uma coroa de ouro"
+    />
+
+    <main>
+      <h1>Entre em contato com a gente!</h1>
+      <p>Mande uma pergunta pelos nossos canais digitais ou pelo e-mail.</p>
+      <div class="container-main">
+        <form>
+          <div class="form-dados">
+            <label for="name">Nome</label>
+            <input
+              type="text"
+              id="name"
+              name="fale-conosco"
+              placeholder="Digite seu nome"
+              required
+            />
+          </div>
+
+          <div class="form-dados">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="fale-conosco"
+              placeholder="me@you.com"
+              required
+            />
+          </div>
+          <div class="form-dados">
+            <label for="mensagem">Mensagem</label>
+            <textarea name="fale-conosco" id="mensagem" required></textarea>
+          </div>
+          <button type="button">Enviar</button>
+        </form>
+        <div class="politica-qualidade">
+          <h1>Politica de Qualidade</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            quae nihil unde nulla fuga voluptate sit eveniet doloremque eligendi
+            ratione?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, doloremque?
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <h2>Nossas Informações</h2>
+      <ul>
+        <li><a href="#">Trabalhe Conosco</a></li>
+        <li><a href="#">Membros</a></li>
+        <li><a href="#">Fale Conosco</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
