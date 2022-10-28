@@ -228,7 +228,7 @@ i {
   transition: ease-in-out 0.3s;
 }
 
-.card-categorias > a > img:hover {
+.card-categorias > a > img:hover{
   opacity: 0.8;
   transform: scale(1.044);
 }
@@ -237,6 +237,11 @@ i {
 #produtos {
   margin-top: 2rem;
   text-align: center;
+}
+
+#produtos > h1 {
+  font-size: 4rem;
+  font-family: var(--font-title);
 }
 
 .container-produtos {
@@ -272,11 +277,6 @@ i {
 
 .prev:hover, .next:hover {
   transform: scale(1.5);
-}
-
-#produtos > h1 {
-  font-size: 3rem;
-  font-family: var(--font-title);
 }
 
 .card-produtos {
@@ -324,41 +324,103 @@ i {
 
 /* F O O T E R */
 
-#contact-us {
+#footer-principal{
   width: 100%;
-  background-color: var(--color-footer);
-  margin-top: 5rem;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  padding-top: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  background-color: #717171;
 }
 
-#bloco-footer1 > h2 {
-  font-size: 1rem;
+.footer-sobre-nos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  padding: 0.9rem;
+  margin-bottom: 5rem;
 }
 
-#bloco-footer1 > p {
-  border-bottom: 2rem;
+.footer-sobre-nos > h3{
+  font-family: var(--font-title);
+  color: white;  
+  margin-bottom: 1rem;
 }
 
-#bloco-footer1 > p > a {
+.footer-sobre-nos > ul > li{
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+
+.footer-sobre-nos > ul > li > a{
   text-decoration: none;
-  color: black;
+  color: white;
 }
-/**/
+
+.footer-sobre-nos > ul > li > a:hover{
+  color: rgb(238, 195, 195);
+}
+
+#endereco{
+  margin-top: 2rem;
+}
+
+#endereco h3{
+  font-family: var(--font-title);
+  color: white;
+  text-align: center;
+  margin-bottom: 0.8rem;
+  font-size: 2.5rem;
+}
+
+/* Responsividade */
 @media screen and (max-width: 922px) {
+  body{
+    width: 100%;
+    overflow-x: none;
+  }
   #header-list {
     display: none;
   }
 
-  footer > ul {
-    position: relative;
-    right: 8rem;
+  .carousel-image > img{
+    width: 20rem;
+    height: 20rem;
   }
 
-  footer > ul > li {
-    font-size: 1rem;
+  .pag-divisor{
+    display: none;
+  }
+
+  #produtos .hide{
+    display: none;
+  }
+
+  #produtos{
+    margin-top: 5rem;
+  }
+
+  .card-categorias{
+    margin-top: 2rem;
+  }
+
+  #footer-principal{
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #footer-principal > .footer-sobre-nos{
+    display: none;
+  }
+
+  #endereco{
+    width: 100%;
+  }
+
+  #endereco > img{
+    width: 100%;
   }
 }
