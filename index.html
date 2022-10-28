@@ -11,7 +11,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./public/views/styles/style-landing-page.css" />
+    <link
+      rel="stylesheet"
+      href="./public/views/styles/style-landing-page.css"
+    />
     <title>byJulia</title>
   </head>
   <body>
@@ -26,11 +29,14 @@
 
       <div class="header-list">
         <form id="menu-search">
-          <input 
-          type="text" id="products" name="products" placeholder="O que você procura hoje?"
+          <input
+            type="text"
+            id="products"
+            name="products"
+            placeholder="O que você procura hoje?"
           />
-          <label 
-          for="products"><i class="fa-solid fa-magnifying-glass"></i>
+          <label for="products"
+            ><i class="fa-solid fa-magnifying-glass"></i>
           </label>
         </form>
         <a href="./public/views/pagina-login.html" target="_self"
@@ -41,73 +47,139 @@
     </header>
 
     <section id="carousel">
-
       <div class="carousel-image fade">
-        <img src="./public/img/banner.png" alt=""/>
+        <img src="./public/img/banner.png" alt="" />
       </div>
 
       <div class="carousel-image fade">
-        <img src="./public/img/banner2.png" alt=""/>
+        <img src="./public/img/banner2.png" alt="" />
       </div>
 
       <div class="carousel-image fade">
-        <img src="./public/img/banner3.png" alt=""/>
+        <img src="./public/img/banner3.png" alt="" />
       </div>
-      
     </section>
 
-
-    <div id="container-cont">
+    <div id="container-banner">
       <span class="image-cont"></span>
       <span class="image-cont"></span>
       <span class="image-cont"></span>
     </div>
 
-    
-
     <div class="pag-divisor"></div>
 
     <section id="categorias">
       <h1>Categorias</h1>
-      <div id="container-cards">
+      <div class="container-cards">
         <div class="card-categorias">
           <h2>Anéis</h2>
-          <a href="./public/views/pagina-products.html"><img src="./public/img/aneis.jpg" alt="Vá para categoria anéis"></a>
+          <a href="./public/views/pagina-products.html"
+            ><img src="./public/img/aneis.jpg" alt="Vá para categoria anéis"
+          /></a>
         </div>
         <div class="card-categorias">
           <h2>Relógios</h2>
-          <a href="./public/views/pagina-products.html"><img src="./public/img/relogios.jpg" alt="Vá para categoria Relógios"></a>
+          <a href="./public/views/pagina-products.html"
+            ><img
+              src="./public/img/relogios.jpg"
+              alt="Vá para categoria Relógios"
+          /></a>
         </div>
         <div class="card-categorias">
           <h2>Correntes</h2>
-          <a href="./public/views/pagina-products.html"><img src="./public/img/correntes.jpg" alt="Vá para categoria Correntes"></a>
+          <a href="./public/views/pagina-products.html"
+            ><img
+              src="./public/img/correntes.jpg"
+              alt="Vá para categoria Correntes"
+          /></a>
         </div>
         <div class="card-categorias">
           <h2>Brincos</h2>
-          <a href="./public/views/pagina-products.html"><img src="./public/img/brincos.jpg" alt="Vá para categoria brincos"></a>
+          <a href="./public/views/pagina-products.html"
+            ><img
+              src="./public/img/brincos.jpg"
+              alt="Vá para categoria brincos"
+          /></a>
         </div>
       </div>
     </section>
 
+    <div class="pag-divisor"></div>
 
-    <footer>
-      <div id="bloco-footer1">
-      <h2>Nossas Informações</h2>
-      <ul>
-        <li><a href="#">Sobre a ByJulia</a></li>
-        <li><a href="#">Trabalhe Conosco</a></li>
-        <li><a href="#">Membros</a></li>
-        <li><a href="./public/views/pagina-fale-conosco.html" target="_blank">Fale Conosco</a></li>
-      </ul>
+    <section id="produtos">
+      <h1>Produtos</h1>
+      <div class="container-produtos">
+        <div class="card-produtos hide">
+          <header>
+            <img src="public/img/anel1.webp" alt="">
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p>Anel de Diamantes</p>
+            <p>R$ 51.200,00</p>
+            <p>10x sem juros de R$5.200,00</p>
+          </footer>
+        </div>
+
+        <div class="card-produtos">
+          <header>
+            <img src="public/img/anel1.webp" alt="">
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p>Anel de Diamantes</p>
+            <p>R$ 51.200,00</p>
+            <p>10x sem juros de R$5.200,00</p>
+          </footer>
+        </div>
+
+        <div class="card-produtos hide">
+          <header>
+            <img src="public/img/anel1.webp" alt="">
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p>Anel de Diamantes</p>
+            <p>R$ 51.200,00</p>
+            <p>10x sem juros de R$5.200,00</p>
+          </footer>
+        </div>
+
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
       </div>
-      <div id="bloco-footer2">
-      <i class="fa-brands fa-linkedin-in"></i>
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-github"></i>
+
+      <div id="contador-produtos">
+        <span class="produtos-cont"></span>
+        <span class="produtos-cont"></span>
+        <span class="produtos-cont"></span>
       </div>
+    </section>
+
+    <footer id="footer-principal">
+      <section class="footer-sobre-nos">
+        <h3>História</h3>
+        <ul>
+          <li><a href="#">Por que byJulia?</a></l>
+          <li><a href="#">Nossos diferenciais</a></li>
+          <li><a href="#">Membros</a></li>
+        </ul>
+      </section>
+      <section class="footer-sobre-nos">
+        <h3>Lorem.</h3>
+        <ul>
+          <li><a href="#">Lorem, ipsum.</a></l>
+          <li><a href="#">Lorem, ipsum dolor.</a></li>
+          <li><a href="#">Lorem, ipsum dolor.</a></li>
+        </ul>
+      </section>
+      <section id="endereco">
+        <h3>Endereço</h3>
+        <img src="public/img/maps.jpg" alt="">
+      </section>      
 
     </footer>
 
   </body>
- <!--  <script src="./public/javascript/home.js" defer></script> --> 
+  <script src="./public/javascript/home.js" defer></script>
 </html>
