@@ -15,14 +15,14 @@
     <title>byJulia</title>
   </head>
   <body>
+    <section id="promotion">OFERTA 100% em todos os produtos</section>
     <header>
       <h1 id="logo">byJulia</h1>
-      <ul class="header-list">
-        <li>Joias</li>
-        <li>Infantil</li>
-        <li>Casamento</li>
-        <li>Presentes</li>
-      </ul>
+      <nav id="header-list">
+        <a href="#">Home</a>
+        <a href="./public/views/pagina-products.html">Produtos</a></li>
+        <a href="#">Sobre</a>
+      </nav>
 
       <div class="header-list">
         <form id="menu-search">
@@ -33,20 +33,15 @@
             placeholder="O que você procura hoje?"
           />
           <label for="products"
-            ><i class="fa-solid fa-magnifying-glass"></i
-          ></label>
+            ><i class="fa-solid fa-magnifying-glass"></i>
+          </label>
         </form>
-        <a href="./pagina-login.html" target="_self"
+        <a href="./public/views/pagina-login.html" target="_self"
           ><i class="fa-solid fa-user"></i
         ></a>
-        <i class="fa-solid fa-cart-shopping"></i>
+        <a href="./public/views/pagina-carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a>
       </div>
     </header>
-    <img
-      id="image-header"
-      src="../img/image_header.jpg"
-      alt="duas alianças de ouro rodeadas de uma coroa de ouro"
-    />
 
     <main>
       
@@ -111,13 +106,28 @@
         </section>
     </main>
 
-    <footer>
-      <h2>Nossas Informações</h2>
-      <ul>
-        <li><a href="#">Trabalhe Conosco</a></li>
-        <li><a href="#">Membros</a></li>
-        <li><a href="./pagina-fale-conosco.html" target="_blank">Fale Conosco</a></li>
-      </ul>
+    <footer id="footer-principal">
+      <section class="footer-sobre-nos">
+        <h3>História</h3>
+        <ul>
+          <li><a href="#">Por que byJulia?</a></l>
+          <li><a href="#">Nossos diferenciais</a></li>
+          <li><a href="#">Membros</a></li>
+        </ul>
+      </section>
+      <section class="footer-sobre-nos">
+        <h3>Lorem.</h3>
+        <ul>
+          <li><a href="#">Lorem, ipsum.</a></l>
+          <li><a href="#">Lorem, ipsum dolor.</a></li>
+          <li><a href="#">Lorem, ipsum dolor.</a></li>
+        </ul>
+      </section>
+      <section id="endereco">
+        <h3>Endereço</h3>
+        <img src="../img/maps.jpg" alt="">
+      </section>      
+
     </footer>
 
   </body>

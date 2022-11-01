@@ -15,37 +15,41 @@
     <title>Document</title>
 </head>
 <body>
+    <section id="promotion">OFERTA 100% em todos os produtos</section>
     <header>
-        <h1 id="logo">byJulia</h1>
-        <ul class="header-list">
-          <li>Joias</li>
-          <li>Infantil</li>
-          <li>Casamento</li>
-          <li>Presentes</li>
-        </ul>  
-  
-        <div class="header-list">
-            <form id="menu-search">
-            <input
-              type="text"
-              id="products"
-              name="products"
-              placeholder="O que você procura hoje?"
-            />
-            <label><i class="fa-solid fa-magnifying-glass"></i></label>
-            </form>
-            <i class="fa-solid fa-user"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
-        </div>        
-      </header>      
-    <img src="./img/image_header.jpg" alt="">
-    <div class="product_dados">
+      <h1 id="logo">byJulia</h1>
+      <nav id="header-list">
+        <a href="#">Home</a>
+        <a href="./public/views/pagina-products.html">Produtos</a></li>
+        <a href="#">Sobre</a>
+      </nav>
+
+      <div class="header-list">
+        <form id="menu-search">
+          <input
+            type="text"
+            id="products"
+            name="products"
+            placeholder="O que você procura hoje?"
+          />
+          <label for="products"
+            ><i class="fa-solid fa-magnifying-glass"></i>
+          </label>
+        </form>
+        <a href="./public/views/pagina-login.html" target="_self"
+          ><i class="fa-solid fa-user"></i
+        ></a>
+        <a href="./public/views/pagina-carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+    </header>      
+
+    <main class="product_dados">
         <div>
             <h2 class="nome_produto">Anel Ouro Amarelo e Pedra de Diamante</h2>            
-            <img src="../img/anel1.jpg" alt="anel de ouro com diamantes cravejados" class= "image-principal">
+            <img src="../img/anel1.webp" alt="anel de ouro com diamantes cravejados" class= "image-principal">
             <div class= "image-principal_mini">
-                <img src="../img/anel1.jpg" alt="anel de ouro com diamantes cravejados" class= "principal_mini">
-                <img src="../img/anel1.jpg" alt="anel de ouro com diamantes cravejados" class= "principal_mini">
+                <img src="../img/anel1.webp" alt="anel de ouro com diamantes cravejados" class= "principal_mini">
+                <img src="../img/anel1.webp" alt="anel de ouro com diamantes cravejados" class= "principal_mini">
             </div>
         </div>
         <div class="dados_compras">
@@ -59,7 +63,30 @@
             </div>
             <i class="fa-solid fa-cart-shopping"></i>
         </div>
-    </div>
+    </main>
     
+    <footer id="footer-principal">
+        <section class="footer-sobre-nos">
+          <h3>História</h3>
+          <ul>
+            <li><a href="#">Por que byJulia?</a></l>
+            <li><a href="#">Nossos diferenciais</a></li>
+            <li><a href="#">Membros</a></li>
+          </ul>
+        </section>
+        <section class="footer-sobre-nos">
+          <h3>Lorem.</h3>
+          <ul>
+            <li><a href="#">Lorem, ipsum.</a></l>
+            <li><a href="#">Lorem, ipsum dolor.</a></li>
+            <li><a href="#">Lorem, ipsum dolor.</a></li>
+          </ul>
+        </section>
+        <section id="endereco">
+          <h3>Endereço</h3>
+          <img src="../img/maps.jpg" alt="">
+        </section>      
+  
+      </footer>
 </body>
 </html>

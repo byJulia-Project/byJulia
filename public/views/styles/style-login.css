@@ -3,8 +3,8 @@
 :root{
   --font-title: 'Cormorant SC', sans serif;
   --font-text: 'Montserrat', sans serif;
-  --color-login: #F2DA80;
-  --color-cadastro: #F4EBCB;
+  --color-login: #FFA67D;
+  --color-cadastro: #F2DA80;
 }
 
 *{
@@ -30,6 +30,7 @@ body{
   justify-content: flex-start;
   flex-direction: column;
   background-color: var(--color-login);
+  opacity: 0.8;
 }
 
 .left-side h1{
@@ -71,10 +72,9 @@ body{
   height: 2.4rem;
   width: 20rem;
   border: none;
-  background: rgba(242, 141, 141, 0.4);
+  background: rgba(224, 216, 216, 0.4);
   border-radius: 1.2rem;
 }
-
 
 #button-login{
   height: 4rem;
@@ -113,6 +113,7 @@ body{
   justify-content: flex-end;
   flex-direction: column;
   background-color: var(--color-cadastro);
+  opacity: 0.8;
 }
 
 .right-side h1{
