@@ -15,66 +15,98 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1 id="logo">byJulia</h1>
-        <ul class="header-list">
-          <li>Joias</li>
-          <li>Infantil</li>
-          <li>Casamento</li>
-          <li>Presentes</li>
-        </ul>  
+  <header>
+    <h1 id="logo">byJulia</h1>
+    <nav id="header-list">
+      <a href="#">Home</a>
+      <a href="./public/views/pagina-products.html">Produtos</a></li>
+      <a href="#">Sobre</a>
+    </nav>
+
+    <div class="header-list">
+      <form id="menu-search">
+        <input
+          type="text"
+          id="products"
+          name="products"
+          placeholder="O que você procura hoje?"
+        />
+        <label for="products"
+          ><i class="fa-solid fa-magnifying-glass"></i>
+        </label>
+      </form>
+      <a href="./public/views/pagina-login.html" target="_self"
+        ><i class="fa-solid fa-user"></i
+      ></a>
+      <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+  </header>
+
+
+      <main>
+        <h1>Cesta de compras</h1>
+        <div id="container">
+          <header>
+            <p>Produto</p>
+            <p>Quantidade<p>
+            <p>Preço</p>
+         </header>
+          <section id="cestaProdutos">
+            <div class="card-products">
+              <figure>
+                <img src="../img/anel1.webp" alt="imagem-produto">
+              </figure>
+              <h2>Anel de Ouro 18k</h2>
+              <div class="card-button">
+                <button type="button">-</button>
+                <input type="number">
+                <button type="button">+</button>
+              </div>
+              <p>R$ 1.500,00</p>
+            </div>
+            <div class="card-products">
+              <figure>
+                <img src="../img/anel1.webp" alt="imagem-produto">
+              </figure>
+              <h2>Anel de Ouro 18k</h2>
+              <div class="card-button">
+                <button type="button">-</button>
+                <input type="number">
+                <button type="button">+</button>
+              </div>
+              <p>R$ 1.500,00</p>
+            </div>
+          </section>
+          <section id="resumoProdutos">
+            <h2>Resumo Pedido</h2>
+            <h5>2 produtos</h5>
+            <button type="button">Finalizar Compra</button>
+            <a href="../views/pagina-products.html">Adicionar</a>
+          </section>
+        </div>
+      </main>    
+      <footer id="footer-principal">
+        <section class="footer-sobre-nos">
+          <h3>História</h3>
+          <ul>
+            <li><a href="#">Por que byJulia?</a></l>
+            <li><a href="#">Nossos diferenciais</a></li>
+            <li><a href="#">Membros</a></li>
+          </ul>
+        </section>
+        <section class="footer-sobre-nos">
+          <h3>Lorem.</h3>
+          <ul>
+            <li><a href="#">Lorem, ipsum.</a></l>
+            <li><a href="#">Lorem, ipsum dolor.</a></li>
+            <li><a href="#">Lorem, ipsum dolor.</a></li>
+          </ul>
+        </section>
+        <section id="endereco">
+          <h3>Endereço</h3>
+          <img src="public/img/maps.jpg" alt="">
+        </section>      
   
-        <div class="header-list">
-            <form id="menu-search">
-            <input
-              type="text"
-              id="products"
-              name="products"
-              placeholder="O que você procura hoje?"
-            <label><i class="fa-solid fa-magnifying-glass"></i></label>
-            </form>
-            <i class="fa-solid fa-user"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
-        </div>        
-      </header>      
-      <img src="../img/image_header.jpg" alt="">
-      <h2 class="nome_produto">Minha Sacola</h2>
-      <div class="meu_carrinho">
-        <div>
-          <div class="cabecalho">
-            <div class="cabecalho-anel">
-              <img src="../img/Rectangle 71.png" alt="anel de ouro com diamantes cravejados" class= "image-anel">
-              <div>Anel Ouro Amarelo e Diamante</div>
-             
-            </div>
-            <i class="fa-solid fa-cart-shopping"></i>
-          </div>
-          <div class="produto-no-carrinho">
-            <div>
-              <button class="menos"><strong>-</strong></button>
-              <input inputmode="numeric" id="botao_quantidade">
-              <button class="mais"><strong>+</strong></button>
-            </div>
-            <div>R$ 4500,00</div>
-          </div>          
-        </div>
-        <div>
-          <div class="dados_compras">
-            <h3>Pedido</h3>
-            <h5>1 produto</h5>
-            <h5>Frete</h5>
-            <div class="total">
-            <h4>Total<h4>
-          
-              <p>R$ 4500,00</p>
-            </div>
-            <p>em até 3x sem juros de R$ 1500,00</p>
-            <p>R$ 1500,00 no boleto</p>
-            <button>FINALIZAR COMPRAS</button>
-            <br>
-            <a>Adicionar mais produtos</a>
-          </div>
-        </div>
-      </div>      
+      </footer> 
 </body>
 </html>
