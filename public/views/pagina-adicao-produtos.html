@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.adicao-produtos.css">
+  <title>Adicao Produtos byJulia</title>
+</head>
+<body>
+  <header>
+    <h1 id="logo">byJulia</h1>
+    <nav>
+      <a href="#">Home</a>
+      <div class="dropdown">
+        <a class="dropbtn">Produtos</a>
+        <div class="dropdown-content">
+          <a href="./public/views/pagina-products.html">Anéis</a>
+          <a href="./public/views/pagina-products.html">Relógios</a>
+          <a href="./public/views/pagina-products.html">Correntes</a>
+          <a href="./public/views/pagina-products.html">Brincos</a>
+
+        </div>
+      </div>
+      <a href="#">Sobre</a>
+    </nav>
+
+    <div class="header-list">
+      <form id="menu-search">
+        <input
+          type="text"
+          id="products"
+          name="products"
+          placeholder="O que você procura hoje?"
+        />
+        <label for="products"
+          ><i class="fa-solid fa-magnifying-glass"></i>
+        </label>
+      </form>
+      <a href="./public/views/pagina-login.html" target="_self"
+        ><i class="fa-solid fa-user"></i
+      ></a>
+      <a href="./public/views/pagina-carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+  </header>
+
+  <main>
+    <h1>Adicionar novos produtos</h1>
+    <form action="">
+      <div class="form-input">
+        <label for="produto">Produto</label>
+        <input type="text" name="produto" id="produto" placeholder="Digite o nome do produto">
+      </div>
+      <div class="form-input">
+        <label for="preco">Preço</label>
+        <input type="text" name="preco" id="preco" placeholder="Digite o preço do produto">
+      </div>
+      <div class="form-input">
+        <label for="imagem">Imagem do produto</label>
+        <input type="file" accept=".jpg" multiple>
+      </div>
+      <fieldset>
+        <legend>Tipo de produto</legend>
+        <input type="radio" name="type-product" value="lancamento" id="lancamento">
+        <label for="type-product">Lançamento</label>
+        <input type="radio" name="type-product" value="limitado" id="limitado">
+        <label for="type-product">Limitado</label>
+        <input type="radio" name="type-product" value="normal" id="normal" checked>
+        <label for="type-product">Produto Normal</label>
+      </fieldset>
+      <div id="btns">
+        <button class="btn" type="submit">Adicionar</button>
+        <button class="btn" type="reset">Resetar informações</button>
+      </div>
+    </form>
+  </main>
+
+  <footer id="footer-principal">
+    <section class="footer-sobre-nos">
+      <h3>História</h3>
+      <ul>
+        <li><a href="#">Por que byJulia?</a></l>
+        <li><a href="#">Nossos diferenciais</a></li>
+        <li><a href="#">Membros</a></li>
+      </ul>
+    </section>
+    <section class="footer-sobre-nos">
+      <h3>Lorem.</h3>
+      <ul>
+        <li><a href="#">Lorem, ipsum.</a></l>
+        <li><a href="#">Lorem, ipsum dolor.</a></li>
+        <li><a href="#">Lorem, ipsum dolor.</a></li>
+      </ul>
+    </section>
+    <section id="endereco">
+      <h3>Endereço</h3>
+      <img src="public/img/maps.jpg" alt="">
+    </section>      
+
+  </footer>
+
+</body>
+</html>
