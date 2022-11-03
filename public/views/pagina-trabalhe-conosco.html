@@ -1,127 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./styles/style-trabalhe-conosco.css" />
-    <title>byJulia Trabalhe Conosco</title>
-  </head>
-  
-  <body>
-    <header>
-      <h1 id="logo">byJulia</h1>
-      <ul class="header-list">
-        <li>Joias</li>
-        <li>Infantil</li>
-        <li>Casamento</li>
-        <li>Presentes</li>
-      </ul>
+<html lang="pt-br">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles/style-trabalhe-conosco.css" />
+  <title>byJulia Trabalhe Conosco</title>
+</head>
 
-      <div class="header-list">
-          <form id="menu-search">
-          <input
-            type="text"
-            id="products"
-            name="products"
-            placeholder="O que você procura hoje?"
-          />
-          <label><i class="fa-solid fa-magnifying-glass"></i></label>
-          </form>
-          <i class="fa-solid fa-user"></i>
-          <i class="fa-solid fa-cart-shopping"></i>
-      </div>
-    </header>
-    <img src="../img/image_header.jpg" alt="">
-
+<body>
     
+  <section id="promotion">OFERTA 100% em todos os produtos</section>
+  <header>
+    <h1 id="logo">byJulia</h1>
+    <nav id="header-list">
+      <a href="#">Home</a>
+      <a href="./public/views/pagina-products.html">Produtos</a></li>
+      <a href="#">Sobre</a>
+    </nav>
+
+    <div class="header-list">
+      <form id="menu-search">
+        <input
+          type="text"
+          id="products"
+          name="products"
+          placeholder="O que você procura hoje?"
+        />
+        <label for="products"
+          ><i class="fa-solid fa-magnifying-glass"></i>
+        </label>
+      </form>
+      <a href="./public/views/pagina-login.html" target="_self"
+        ><i class="fa-solid fa-user"></i
+      ></a>
+      <a href="./public/views/pagina-carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+  </header>
+
+
   <main>
-       
-          <section class="trabalhe-conosco">
-              <h1>Trabalhe Conosco</h1>
-              <h3>Envie seu currículo para gente.</h3>
-          </section>
 
-          
-              
-          
-              <div class="inf-formulario"> 
-                  <form class="button">
-                      <label for="nome">Nome</label><br>
-                      <input type="text" id="nome" name="nome">
-                      <br>
-                      <label for="email">Email</label><br>
-                      <input type="email" name="email" id="email"><br>
-                     <label for="tel">Telefone</label><br>
-                      <input type="tel" name="tel" id="tel">
-                      </form>
-                      <form class="inf-segundo">
-                      <label >Departamentos</label>
-                      <select name="dep" id="dep">
-                          <option>Selecionar</option>    
-                          <option value="financeiro">Financeiro</option>
-                              <option value="sac">Recursos Humanos</option>
-                              <oPtion value="vendas">Vendas</OPtion>
-                              <option value="tecnologia">Tecnologia</option>
-                      </select> </form>
-                      <label >Disponibilidade</label> 
-                       <form class="inf-terceira">
-                      <label for="int">integral(8h)</label><input type="checkbox" id="int" name="dis" value="integral(8h)">
-                      <label for="meio">Meio Período(4h)</label><input type="checkbox" id="meio" name="dis" value="meio periodo"> 
-                      <label for="free">Freelancer</label><input type="checkbox" id="free" name="dis" value="freelancer"> 
-                  </form>
-                     <label >Qual a melhor forma para entrarmos em contato com você?</label>
-                      <form class="inf-quarta">
-                     
-                      <input type="radio" name="contato" id="contato" value="email"><label for="contato">Email</label>
-                      <input type="radio" name="contato" id="contato" value="ligacao"><label for="contato">Ligação</label>
-                      <input type="radio" name="contato" id="contato" value="whatsApp"><label for="contato">WhatsApp</label>
-                  </form>
-                      <label >Mensagem</label>
-                      <form class="inf-quinta">
-                      
-                      <textarea name="mens" id="mens" cols="30" rows="10"></textarea><br>
-                   </form>   
-                   <form class="botoes">
-                      <div class="bt-upload">
-                      <label>Curriculo</label><button>Upload</button></div> <br>
-                  <div class="bt-enviar">
-                      <button>Enviar</button></div></form>
-                  
-  
+    <section class="trabalhe-conosco">
+      <div>
+        <h1>Trabalhe Conosco</h1>
+        <h3>Envie seu currículo para gente.</h3>
+      </div>
+
+      <div>
+        <form>
+          <div>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome">
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+          </div>
+
+          <div>
+            <label for="tel">Telefone</label>
+            <input type="tel" name="tel" id="tel">
+          </div>
+
+          <div>
+            <label>Departamentos</label>
+            <select name="dep" id="dep">
+              <option>Selecionar</option>
+              <option value="financeiro">Financeiro</option>
+              <option value="sac">Recursos Humanos</option>
+              <oPtion value="vendas">Vendas</OPtion>
+              <option value="tecnologia">Tecnologia</option>
+            </select>
+          </div>
+
+          <div>
+            <div>
+              <label>Disponibilidade</label>
+            </div>
+            <div class="boxes">
+              <div>
+                <input type="checkbox" id="int" name="dis" value="integral(8h)"><label for="int">integral(8h)</label>
               </div>
+              <div>
+                <input type="checkbox" id="meio" name="dis"
+                  value="meio periodo"><label for="meio">Meio Período(4h)</label>
+              </div>
+              <div>
+                <input type="checkbox" id="free" name="dis" value="freelancer"><label for="free">Freelancer</label>
+              </div>
+            </div>
+          </div>
           
-      </main>
-     
-    <footer>
-      <section>
-        <ul>
-          <h2>Nossas Informações</h2>
+          <div>
+            <div>
+              <label>Qual a melhor forma para entrarmos em contato com você?</label>
+            </div>
+            <div class="boxes">
+              <div>
+                <input type="radio" name="contato" id="contato" value="email"><label for="contato">Email</label>
+              </div>
+              <div>
+                <input type="radio" name="contato" id="contato" value="ligacao"><label for="contato">Ligação</label>
+              </div>
+              <div>
+                <input type="radio" name="contato" id="contato" value="whatsApp"><label for="contato">WhatsApp</label>
+              </div>
+            </div>
+          </div>
+          
+          <div>
+            <label>Mensagem</label>        
+            <textarea name="mens" id="mens" cols="30" rows="10"></textarea>
+          </div>
+          <div class="bt-upload">
+            <label>Curriculo</label><button>Upload</button>          
+          </div>
+          <div class="bt-enviar">
+            <button>Enviar</button>
+          </div>
+        </form>
+      </div>      
+    </section>
+  </main>
 
-          <li>Sobre a byJulia</li>
-          <li>Trabalhe Conosco</li>
-          <li>Membros</li>
-          <li>Fale conosco</li>
-          </ul>
-      </section>
-      
-      <section>
-        <ul>
-         
-          <li><i class="fab fa-linkedin-in"></i></li>
-          <li><i class="fab fa-twitter"></i></li>
-          <li><i class="fab fa-github"></i></li>
-        </ul>
-      </section>
-    </footer>
-  </body>
+  <footer id="footer-principal">
+    <section class="footer-sobre-nos">
+      <h3>História</h3>
+      <ul>
+        <li><a href="#">Por que byJulia?</a></l>
+        <li><a href="#">Nossos diferenciais</a></li>
+        <li><a href="#">Membros</a></li>
+      </ul>
+    </section>
+    
+    <section class="footer-sobre-nos">
+      <h3>Lorem.</h3>
+      <ul>
+        <li><a href="#">Lorem, ipsum.</a></l>
+        <li><a href="#">Lorem, ipsum dolor.</a></li>
+        <li><a href="#">Lorem, ipsum dolor.</a></li>
+      </ul>
+    </section>
+    
+    <section id="endereco">
+      <h3>Endereço</h3>
+      <img src="../img/maps.jpg" alt="">
+    </section>      
+
+  </footer>
+</body>
+
 </html>
 <script src="https://kit.fontawesome.com/1b82f5acb9.js" crossorigin="anonymous"></script>

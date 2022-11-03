@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;0,800;0,900;1,600&display=swap');
 
-:root{
-  --font-text: 'Montserrat', sans serif;
-  --font-title: 'Cormorant SC', sans serif;
-  --color-primary: #F2DA80;
-  --color-secondary: #F28D8D;
+:root {
+  --font-text: "Montserrat", sans serif;
+  --font-title: "Cormorant SC", sans serif;
+  --color-primary: #fc926f;
+  --color-secondary: #f28d8d;
+  --color-footer: rgba(130, 142, 242, 0.5);
 }
 
 *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header *, footer *{
   margin: 0 auto;
   padding: 0 auto;
-  box-sizing: border-box;
 }
 
 body{
@@ -19,40 +24,59 @@ body{
   
 }
 
-body > header{
+
+/* HEADER */
+#promotion {
+  text-align: center;
+  background-color: #725752;
+  color: #eafdf8;
+  height: 1.5rem;
+}
+
+body > header {
   width: 100%;
   height: 9.375rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: var(--color-primary);
+  opacity: 0.6;
+  position: sticky;
+  top: 1;
+  z-index: 20;
+  transition: ease-in-out 1s;
 }
 
-#logo{
+body > header:hover {
+  opacity: 1;
+}
+git push
+#logo {
   font-size: 4rem;
   font-family: var(--font-title);
   border-bottom: 2px solid var(--color-secondary);
   font-weight: 300;
+  margin-bottom: 0.8rem;
 }
 
-.header-list{
+#header-list{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
-li{
-  list-style-type: none;
-  margin-left: 1.4rem;
+#header-list > a{
+  text-decoration: none;
+  color: #eafdf8;
+  margin: 0.9rem;
+  font-size: 2rem;
   cursor: pointer;
-  transition: ease-in-out 0.3s;
-  font-weight: 300;
-  font-size: 1.5rem;
+  transition: 1s;
 }
 
-li:hover{
-  color: #F28D8D;
+#header-list > a:hover{
+  color: #725752;
+  border-bottom: 1px solid #f06060;
 }
 
 #menu-search{
@@ -64,13 +88,12 @@ li:hover{
 }
 
 #menu-search > input{
-  color: var(--color-secondary);
+  color: #eafdf8;
   background-color: var(--color-primary);
   font-weight: 700;
   font-size: 0.68rem;
   border: none;
 }
-
 
 #menu-search > input:focus{
   box-shadow: 0 0 0 0;
@@ -84,21 +107,12 @@ li:hover{
   margin-right: 0.8rem;
 }
 
-i{
+i {
   cursor: pointer;
 }
 
-#menu-search > label > i:hover{
-  color: var(--color-secondary);
-}
-
-.fa-user{
+.fa-user {
   margin: 0.4rem;
-}
-
-img{
-  width: 100%;
-  height: 17.1rem;
 }
 
 
@@ -106,11 +120,48 @@ main {
   display: flex;
    flex-direction: column;
    justify-content: center;
-   
+   padding: 4rem;
+   align-items: center;
 }
-
-
-
+.trabalhe-conosco{
+  width: 50%;
+  display:flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.trabalhe-conosco>div{
+  display:flex;
+  align-items: center;
+  flex-direction: column; 
+  
+}
+form{
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  gap: .7rem;
+}
+form>div{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+form>div>input,select,textarea{
+  width: 100%;
+  
+}
+form div.boxes{
+  display:flex;
+  width: 80%;
+  justify-content: space-between;
+}
+form div.boxes>div{
+  display:flex;
+  align-items: center;
+  gap: .3rem;
+}
 .trabalhe-conosco h1{
    display: flex;
    font-size:50px;
@@ -150,14 +201,7 @@ main {
 
 }
 
-input{
-   border-color: #9B9B9B;
-   
-   width: 500px;
-   height: 30px;   
-   left: 80px;
-   top: 180px;
-}
+
 
 
        
@@ -228,7 +272,7 @@ border-color: #9B9B9B;
    
 }
 .bt-enviar button{
-   width: 500px;
+   width: 100%;
    height: 30px;
    color: #FFFFFF;
    font-size: 25px;
@@ -236,10 +280,110 @@ border-color: #9B9B9B;
    border-color: rgba(242, 141, 141, 0.6)
 }
 
+  /* F O O T E R */
+
+#footer-principal{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  background-color: #717171;
+}
+
+.footer-sobre-nos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  padding: 0.9rem;
+  margin-bottom: 5rem;
+}
+
+.footer-sobre-nos > h3{
+  font-family: var(--font-title);
+  color: white;  
+  margin-bottom: 1rem;
+}
+
+.footer-sobre-nos > ul > li{
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+
+.footer-sobre-nos > ul > li > a{
+  text-decoration: none;
+  color: white;
+}
+
+.footer-sobre-nos > ul > li > a:hover{
+  color: rgb(238, 195, 195);
+}
+
+#endereco{
+  margin-bottom: 4rem;
+}
+
+#endereco h3{
+  font-family: var(--font-title);
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
   
-footer{
-  background-color: rgba(128, 139, 242, 0.5)
 }
-footer{
-  display:flex
+
+#endereco > img{
+  width: 15rem;
 }
+
+/* Responsividade */
+@media screen and (max-width: 922px) {
+  body{
+    width: 100%;
+    overflow-x: none;
+  }
+  #header-list {
+    display: none;
+  }
+
+  .carousel-image > img{
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .pag-divisor{
+    display: none;
+  }
+
+  #produtos .hide{
+    display: none;
+  }
+
+  #produtos{
+    margin-top: 5rem;
+  }
+
+  .card-categorias{
+    margin-top: 2rem;
+  }
+
+  #footer-principal{
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #footer-principal > .footer-sobre-nos{
+    display: none;
+  }
+
+  #endereco{
+    width: 100%;
+  }
+
+  #endereco > img{
+    width: 100%;
+  }
+}
+
