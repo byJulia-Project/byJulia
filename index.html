@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="./public/views/styles/style-landing-page.css"
     />
-    
+    <script src="./public/javascript/home.js" defer></script>
     <title>byJulia</title>
   </head>
   <body>
@@ -23,6 +23,7 @@
     <section id="promotion">OFERTA 100% em todos os produtos</section>
     <header>
       <h1 id="logo">byJulia</h1>
+      
       <nav>
         <a href="#">Home</a>
         <div class="dropdown">
@@ -55,7 +56,18 @@
         ></a>
         <a href="./public/views/pagina-carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a>
       </div>
+      <aside id="menu-hamburguer-container">
+        <div id="container-hamburguer">
+          <input type="checkbox" id="checkbox-menu">
+          <label for="checkbox-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+      </aside>
     </header>
+    
 
     <section id="carousel">
       <div class="carousel-image fade">
@@ -203,5 +215,4 @@
 
   </body>
  
-  <script src="./public/javascript/home.js" defer></script>
 </html>

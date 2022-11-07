@@ -12,6 +12,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./styles/style-fale-conosco.css"/>
+    <script src="../javascript/fale-conosco.js"></script>
     <title>byJulia Fale Conosco</title>
   </head>
 
@@ -55,34 +56,25 @@
     <main>
       <h1>Entre em contato com a gente!</h1>
       <p>Mande uma pergunta pelos nossos canais digitais ou pelo e-mail.</p>
+      <div class="errors">
+        <ul></ul>
+      </div>
       <div class="container-main">
-        <form>
+        <form class="trabalhe-conosco" method="post">
           <div class="form-dados">
             <label for="name">Nome</label>
-            <input
-              type="text"
-              id="name"
-              name="fale-conosco"
-              placeholder="Digite seu nome"
-              required
-            />
+            <input type="text" id="name" name="fale-conosco" placeholder="Digite seu nome" required/>
           </div>
 
           <div class="form-dados">
             <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="fale-conosco"
-              placeholder="me@you.com"
-              required
-            />
+            <input type="email" id="email" name="fale-conosco" placeholder="me@you.com" required/>
           </div>
           <div class="form-dados">
             <label for="mensagem">Mensagem</label>
             <textarea name="fale-conosco" id="mensagem" required></textarea>
           </div>
-          <button type="button">Enviar</button>
+          <button type="submit">Enviar</button>
         </form>
         <div class="politica-qualidade">
           <h1>Politica de Qualidade</h1>
