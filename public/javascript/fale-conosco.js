@@ -24,15 +24,17 @@ window.addEventListener('load', function(){
     if(email.value.length < 10){
       errorsMessages.push('O campo email precisa ter mais de 10 caracteres');
     };
-
+    // Se a quantidade de mensagens de erro for mais que zero, nao envia o formulario
     if(errorsMessages.length > 0){
     // Previne o comportamento padrão do evento, significa que não será enviado.
       evento.preventDefault();
       errors.style.display = 'block';
-    }
-
+    
     for(let i = 0; i < errorsMessages.length;i++){
       ulErrors.innerHTML += '<li>'+errorsMessages[i]+'</li>'
     }
+  }
+
+  
   });
 });
