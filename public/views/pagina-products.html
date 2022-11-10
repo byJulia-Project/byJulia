@@ -53,68 +53,460 @@
     </header>
 
     <main>
+
+      <section id="carousel">
+        <div class="carousel-image fade">
+          <img src="./public/img/banner.png" alt=""/>
+        </div>
+  
+        <div class="carousel-image fade">
+          <img src="./public/img/banner2.png" alt=""/>
+        </div>
+  
+        <div class="carousel-image fade">
+          <img src="./public/img/banner3.png" alt=""/>
+        </div>
+      </section>
       
-      <h1 id="titulo">Todos os produtos
-      </h1>
-      <section id="catalogos">
-            <article class="card-produto">
-                <header>
-                    <img src="../img/anel1.webp" alt="">
-                </header>
-                <footer>
-                    <p>Anel de Ouro 18K <br>
-                        R$ 1.500,00
-                    </p>
-                    <a href="./produto-interno.html">Comprar</a>
-                </footer>
-            </article>
-            <article class="card-produto">
-                <header>
-                    <img src="../img/anel1.webp" alt="">
-                </header>
-                <footer>
-                    <p>Anel de Ouro 18K <br>
-                        R$ 1.500,00
-                    </p>
-                    <a href="./produto-interno.html">Comprar</a>
-                </footer>
-            </article>
-            <article class="card-produto">
-                <header>
-                    <img src="../img/anel1.webp" alt="">
-                </header>
-                <footer>
-                    <p>Anel de Ouro 18K <br>
-                        R$ 1.500,00
-                    </p>
-                    <a href="./produto-interno.html">Comprar</a>
-                </footer>
-            </article>
-            <article class="card-produto">
-                <header>
-                    <img src="../img/anel1.webp" alt="">
-                </header>
-                <footer>
-                    <p>Anel de Ouro 18K <br>
-                        R$ 1.500,00
-                    </p>
-                    <a href="./produto-interno.html">Comprar</a>
-                </footer>
-            </article>
-            <article class="card-produto">
-                <header>
-                    <img src="../img/anel1.webp" alt="">
-                </header>
-                <footer>
-                    <p>Anel de Ouro 18K <br>
-                        R$ 1.500,00
-                    </p>
-                    <a href="./produto-interno.html">Comprar</a>
-                </footer>
-            </article>
-        </section>
+          <div id="container-banner">
+            <span class="image-cont"></span>
+            <span class="image-cont"></span>
+            <span class="image-cont"></span>
+          </div>
+
+      <section class="navegue-categorias">
+        <div>
+        <h2>NAVEGUE POR CATEGORIAS</h2>
+        <h3>Faça da vida um desfile, invista em acessórios e joias</h3>
+        </div>
+        <img id="foto1" src="../img/categoria-anel.png" alt="">
+        <img id="foto2" src="../img/categoria-anel2.png" alt="">
+        <img id="foto3" src="../img/categoria-brinco.png" alt="">
+        <img id="foto4" src="../img/pulseira.png" alt="">
+        <img id="foto5" src="../img/pulseira2.png" alt="">
+        <img id="foto6" src="../img/colar.png" alt="">
+      </section>
+
+      <section class="best-sellers">
+        <div id="titulo">
+        <h2>Queridinhos do ano</h2>
+        <h3>Confira os Produtos mais vendidos</h3>
+          </div>
+        <div class="card-best-sellers">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="../img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Mais vendido</p>
+            <p class="title-produto">Anel de Diamantes</p>
+            <div class="div-valor-produtos">
+            <p class="valor-produto">R$ 51.200,00</p>
+            <p class="juros">10x sem juros de R$5.200,00</p>
+            <a href="./public/views/pagina-carrinho.html">Adicione ao carrinho</a>
+            </div>
+          </footer>
+        </div>
+        <div class="card-best-sellers">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="../img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Mais vendido</p>
+            <p class="title-produto">Anel de Diamantes</p>
+            <div class="div-valor-produtos">
+            <p class="valor-produto">R$ 51.200,00</p>
+            <p class="juros">10x sem juros de R$5.200,00</p>
+            <a href="./public/views/pagina-carrinho.html">Adicione ao carrinho</a>
+            </div>
+          </footer>
+        </div>
+
+        <div class="card-best-sellers">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="../img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Mais vendido</p>
+            <p class="title-produto">Anel de Diamantes</p>
+            <div class="div-valor-produtos">
+            <p class="valor-produto">R$ 51.200,00</p>
+            <p class="juros">10x sem juros de R$5.200,00</p>
+            <a href="./public/views/pagina-carrinho.html">Adicione ao carrinho</a>
+            </div>
+          </footer>
+        </div>
+        </div>
+
+      </section>
+
+            <h1 class="class-produtos">PRODUTOS</h1>
+
+      <div class="filtro">
+        <ul>
+          <li>CATEGORIA <img src="../img/seta.png" alt=""></li>
+          <li>SUBCATEGORIAS <img src="../img/seta.png" alt=""></li>
+          <li>COLEÇÃO <img src="../img/seta.png" alt=""></li>
+          <li>MATERIAL <img src="../img/seta.png" alt=""></li>
+          <li>PEDRAS <img src="../img/seta.png" alt=""></li>
+          <li>ORGANIZAR POR: <img src="../img/seta.png" alt=""></li>
+        </ul>
+      </div>
+
+      <div class="container-produtos">
+        <div class="card-produtos hide">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="../img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p class="title-produto">Anel de Diamantes</p>
+            <div class="div-valor-produtos">
+            <p class="valor-produto">R$ 51.200,00</p>
+            <p class="juros">10x sem juros de R$5.200,00</p>
+            <a href="./public/views/pagina-carrinho.html">Adicione ao carrinho</a>
+            </div>
+          </footer>
+        </div>
+
+        <div class="card-produtos hide">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="../img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p class="title-produto">Anel de Diamantes</p>
+            <div class="div-valor-produtos">
+            <p class="valor-produto">R$ 51.200,00</p>
+            <p class="juros">10x sem juros de R$5.200,00</p>
+            <a href="./public/views/pagina-carrinho.html">Adicione ao carrinho</a>
+            </div>
+          </footer>
+        </div>
+
+        <div class="card-produtos hide">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="../img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p class="title-produto">Anel de Diamantes</p>
+            <div class="div-valor-produtos">
+            <p class="valor-produto">R$ 51.200,00</p>
+            <p class="juros">10x sem juros de R$5.200,00</p>
+            <a href="./public/views/pagina-carrinho.html">Adicione ao carrinho</a>
+            </div>
+          </footer>
+        </div>
+
+        <div class="card-produtos hide">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="../img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p class="title-produto">Anel de Diamantes</p>
+            <div class="div-valor-produtos">
+            <p class="valor-produto">R$ 51.200,00</p>
+            <p class="juros">10x sem juros de R$5.200,00</p>
+            <a href="./public/views/pagina-carrinho.html">Adicione ao carrinho</a>
+            </div>
+          </footer>
+        </div>
+
+        <div class="card-produtos hide">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="../img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p class="title-produto">Anel de Diamantes</p>
+            <div class="div-valor-produtos">
+            <p class="valor-produto">R$ 51.200,00</p>
+            <p class="juros">10x sem juros de R$5.200,00</p>
+            <a href="./public/views/pagina-carrinho.html">Adicione ao carrinho</a>
+            </div>
+          </footer>
+        </div>
+
+        <div class="card-produtos hide">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="../img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p class="title-produto">Anel de Diamantes</p>
+            <div class="div-valor-produtos">
+            <p class="valor-produto">R$ 51.200,00</p>
+            <p class="juros">10x sem juros de R$5.200,00</p>
+            <a href="./public/views/pagina-carrinho.html">Adicione ao carrinho</a>
+            </div>
+          </footer>
+        </div>
+
+        <div class="card-produtos hide">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="../img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p class="title-produto">Anel de Diamantes</p>
+            <div class="div-valor-produtos">
+            <p class="valor-produto">R$ 51.200,00</p>
+            <p class="juros">10x sem juros de R$5.200,00</p>
+            <a href="./public/views/pagina-carrinho.html">Adicione ao carrinho</a>
+            </div>
+          </footer>
+        </div>
+
+        <div class="card-produtos hide">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="../img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p class="title-produto">Anel de Diamantes</p>
+            <div class="div-valor-produtos">
+            <p class="valor-produto">R$ 51.200,00</p>
+            <p class="juros">10x sem juros de R$5.200,00</p>
+            <a href="./public/views/pagina-carrinho.html">Adicione ao carrinho</a>
+            </div>
+          </footer>
+        </div>
+        <div class="card-produtos hide">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="../img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p class="title-produto">Anel de Diamantes</p>
+            <div class="div-valor-produtos">
+            <p class="valor-produto">R$ 51.200,00</p>
+            <p class="juros">10x sem juros de R$5.200,00</p>
+            <a href="./public/views/pagina-carrinho.html">Adicione ao carrinho</a>
+            </div>
+          </footer>
+        </div>
+
+        <div class="card-produtos hide">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="../img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p class="title-produto">Anel de Diamantes</p>
+            <div class="div-valor-produtos">
+            <p class="valor-produto">R$ 51.200,00</p>
+            <p class="juros">10x sem juros de R$5.200,00</p>
+            <a href="./public/views/pagina-carrinho.html">Adicione ao carrinho</a>
+            </div>
+          </footer>
+        </div>
+
+        <div class="card-produtos hide">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="../img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p class="title-produto">Anel de Diamantes</p>
+            <div class="div-valor-produtos">
+            <p class="valor-produto">R$ 51.200,00</p>
+            <p class="juros">10x sem juros de R$5.200,00</p>
+            <a href="./public/views/pagina-carrinho.html">Adicione ao carrinho</a>
+            </div>
+          </footer>
+        </div>
+
+        <div class="card-produtos hide">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="../img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p class="title-produto">Anel de Diamantes</p>
+            <div class="div-valor-produtos">
+            <p class="valor-produto">R$ 51.200,00</p>
+            <p class="juros">10x sem juros de R$5.200,00</p>
+            <a href="./public/views/pagina-carrinho.html">Adicione ao carrinho</a>
+            </div>
+          </footer>
+        </div>
+
+        <div class="card-produtos hide">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="../img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p class="title-produto">Anel de Diamantes</p>
+            <div class="div-valor-produtos">
+            <p class="valor-produto">R$ 51.200,00</p>
+            <p class="juros">10x sem juros de R$5.200,00</p>
+            <a href="./public/views/pagina-carrinho.html">Adicione ao carrinho</a>
+            </div>
+          </footer>
+        </div>
+
+        <div class="card-produtos hide">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="../img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p class="title-produto">Anel de Diamantes</p>
+            <div class="div-valor-produtos">
+            <p class="valor-produto">R$ 51.200,00</p>
+            <p class="juros">10x sem juros de R$5.200,00</p>
+            <a href="./public/views/pagina-carrinho.html">Adicione ao carrinho</a>
+            </div>
+          </footer>
+        </div>
+
+        <div class="card-produtos hide">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="../img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p class="title-produto">Anel de Diamantes</p>
+            <div class="div-valor-produtos">
+            <p class="valor-produto">R$ 51.200,00</p>
+            <p class="juros">10x sem juros de R$5.200,00</p>
+            <a href="./public/views/pagina-carrinho.html">Adicione ao carrinho</a>
+            </div>
+          </footer>
+        </div>
+
+        <div class="card-produtos hide">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="../img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p class="title-produto">Anel de Diamantes</p>
+            <div class="div-valor-produtos">
+            <p class="valor-produto">R$ 51.200,00</p>
+            <p class="juros">10x sem juros de R$5.200,00</p>
+            <a href="./public/views/pagina-carrinho.html">Adicione ao carrinho</a>
+            </div>
+          </footer>
+        </div>
+
+        <div class="card-produtos hide">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="../img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p class="title-produto">Anel de Diamantes</p>
+            <div class="div-valor-produtos">
+            <p class="valor-produto">R$ 51.200,00</p>
+            <p class="juros">10x sem juros de R$5.200,00</p>
+            <a href="./public/views/pagina-carrinho.html">Adicione ao carrinho</a>
+            </div>
+          </footer>
+        </div>
+
+        <div class="card-produtos hide">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="../img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p class="title-produto">Anel de Diamantes</p>
+            <div class="div-valor-produtos">
+            <p class="valor-produto">R$ 51.200,00</p>
+            <p class="juros">10x sem juros de R$5.200,00</p>
+            <a href="./public/views/pagina-carrinho.html">Adicione ao carrinho</a>
+            </div>
+          </footer>
+        </div>
+
+        <div class="card-produtos hide">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="../img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p class="title-produto">Anel de Diamantes</p>
+            <div class="div-valor-produtos">
+            <p class="valor-produto">R$ 51.200,00</p>
+            <p class="juros">10x sem juros de R$5.200,00</p>
+            <a href="./public/views/pagina-carrinho.html">Adicione ao carrinho</a>
+            </div>
+          </footer>
+        </div>
+
+        <div class="card-produtos hide">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="../img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p class="title-produto">Anel de Diamantes</p>
+            <div class="div-valor-produtos">
+            <p class="valor-produto">R$ 51.200,00</p>
+            <p class="juros">10x sem juros de R$5.200,00</p>
+            <a href="./public/views/pagina-carrinho.html">Adicione ao carrinho</a>
+            </div>
+          </footer>
+        </div>
+        <div class="carregar-mais-produtos">
+        <h4>CARREGAR MAIS PRODUTOS</h4>
+       </div>
+        </div>
+        <div id="divisor-pagina1"></div>
+        <div id="logo"><h2>byJulia</h2></div>
+        <div class="divisor-pagina2"></div>
     </main>
 
+    
     <footer id="footer-principal">
       <section class="footer-sobre-nos">
         <h3>História</h3>
