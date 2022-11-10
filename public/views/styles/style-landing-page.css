@@ -142,15 +142,9 @@ nav > .dropdown > a:hover, dropdown:hover .dropbtn{
   margin-right: 0.8rem;
 }
 
-
 #container-hamburguer{
   z-index: 10;
   display: none;
-}
-
-#checkbox-menu{
-  position: absolute;
-  opacity: 0;
 }
 
 #container-hamburguer label{
@@ -215,6 +209,28 @@ nav > .dropdown > a:hover, dropdown:hover .dropbtn{
 .menu-bar{
   position: relative;
   top: 10rem;
+  right: 1rem;
+}
+
+.menu-bar li{
+  list-style-type: none;
+  margin-top: 0.8rem;
+}
+
+.menu-bar li:hover{
+  border-left: 1px solid var(--color-secondary);
+}
+
+.menu-bar li a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  transition: 300ms ease-in-out;
+}
+
+.menu-bar li a:hover{
+  color: grey;
+  filter: brightness(150%);
 }
 
 i {
