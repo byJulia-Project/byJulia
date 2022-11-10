@@ -15,7 +15,8 @@
       rel="stylesheet"
       href="./public/views/styles/style-landing-page.css"
     />
-    <script src="./public/javascript/home.js" defer></script>
+    <script src="./public/javascript/carousel-banner.js" defer></script>
+    <script src="./public/javascript/menu-hamburguer.js" defer></script>
     <title>byJulia</title>
   </head>
   <body>
@@ -33,7 +34,6 @@
             <a href="./public/views/pagina-products.html">Relógios</a>
             <a href="./public/views/pagina-products.html">Correntes</a>
             <a href="./public/views/pagina-products.html">Brincos</a>
-
           </div>
         </div>
         <a href="#">Sobre</a>
@@ -58,19 +58,19 @@
       </div>
 
       <div id="container-hamburguer">
-        <input type="checkbox" id="checkbox-menu">
+        <!-- <input type="checkbox" id="checkbox-menu"> -->
         <label for="checkbox-menu">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span id="line1"></span>
+          <span id="line2"></span>
+          <span id="line3"></span>
         </label>
       </div>
-      <aside id="menu-hamburguer-container">
-        <ul>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-        </ul>
+      <aside id="sidebar">
+          <ul class="menu-bar">
+            <li><a href="">Home</a></li>
+            <li><a href="">Produtos</a></li>
+            <li><a href="">Sobre</a></li>
+          </ul>
       </aside>
     </header>
     
@@ -220,5 +220,5 @@
     </footer>
 
   </body>
- 
+
 </html>

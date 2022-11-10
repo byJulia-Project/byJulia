@@ -144,9 +144,8 @@ nav > .dropdown > a:hover, dropdown:hover .dropbtn{
 
 
 #container-hamburguer{
-  display: flex;
-  position: relative;
-  top: 2rem;
+  z-index: 10;
+  display: none;
 }
 
 #checkbox-menu{
@@ -172,20 +171,50 @@ nav > .dropdown > a:hover, dropdown:hover .dropbtn{
   transition: 0.25s ease-in-out;
 }
 
-#container-hamburguer label span:nth-child(1){
+#container-hamburguer label #line1{
   top: 0;
+  transition: 1s;
 }
 
-#container-hamburguer label span:nth-child(2){
+#container-hamburguer label #line2{
   top: 8px;
+  transition: 0.5s;
 }
 
-#container-hamburguer label span:nth-child(3){
+#container-hamburguer label #line3{
   top: 16px;
+  transition: 1s;
 }
 
-#container-hamburguer:checked label span:nth-child(3){
-  top: 16px;
+.show-menu #line1{
+  transform: rotate(-45deg) translate(-10px, 7px);
+}
+
+.show-menu #line2{
+  opacity: 0;
+}
+
+.show-menu #line3{
+  transform: rotate(45deg) translate(-5px);
+}
+
+#sidebar{
+  width: 10rem;
+  height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: -20rem;
+  transition: all 1s;
+}
+
+.show-menu #sidebar{
+  right: 0;
+}
+
+.menu-bar{
+  position: relative;
+  top: 10rem;
 }
 
 i {
