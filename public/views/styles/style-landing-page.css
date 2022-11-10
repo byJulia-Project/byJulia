@@ -142,15 +142,6 @@ nav > .dropdown > a:hover, dropdown:hover .dropbtn{
   margin-right: 0.8rem;
 }
 
-#menu-hamburguer-container{
-  height: 100vh;
-  width: 20rem;
-  margin-top: 51.1rem;
-  border: 0;
-  position: absolute;
-  right: 0;
-  background-color: #717171;
-}
 
 #container-hamburguer{
   display: flex;
@@ -190,6 +181,10 @@ nav > .dropdown > a:hover, dropdown:hover .dropbtn{
 }
 
 #container-hamburguer label span:nth-child(3){
+  top: 16px;
+}
+
+#container-hamburguer:checked label span:nth-child(3){
   top: 16px;
 }
 
