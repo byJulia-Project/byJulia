@@ -15,6 +15,8 @@
       rel="stylesheet"
       href="./public/views/styles/style-landing-page.css"
     />
+    <script src="./public/javascript/carousel-banner.js" defer></script>
+    <script src="./public/javascript/menu-hamburguer.js" defer></script>
     <title>byJulia</title>
   </head>
   <body>
@@ -22,9 +24,18 @@
     <section id="promotion">OFERTA 100% em todos os produtos</section>
     <header>
       <h1 id="logo">byJulia</h1>
-      <nav id="header-list">
+      
+      <nav>
         <a href="#">Home</a>
-        <a href="./public/views/pagina-products.html">Produtos</a></li>
+        <div class="dropdown">
+          <a class="dropbtn">Produtos</a>
+          <div class="dropdown-content">
+            <a href="./public/views/pagina-products.html">Anéis</a>
+            <a href="./public/views/pagina-products.html">Relógios</a>
+            <a href="./public/views/pagina-products.html">Correntes</a>
+            <a href="./public/views/pagina-products.html">Brincos</a>
+          </div>
+        </div>
         <a href="#">Sobre</a>
       </nav>
 
@@ -45,7 +56,24 @@
         ></a>
         <a href="./public/views/pagina-carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a>
       </div>
+
+      <div id="container-hamburguer">
+        <!-- <input type="checkbox" id="checkbox-menu"> -->
+        <label for="checkbox-menu">
+          <span id="line1"></span>
+          <span id="line2"></span>
+          <span id="line3"></span>
+        </label>
+      </div>
+      <aside id="sidebar">
+          <ul class="menu-bar">
+            <li><a href="#">Home</a></li>
+            <li><a href="./public/views/pagina-products.html" target="_parent">Produtos</a></li>
+            <li><a href="#">Sobre</a></li>
+          </ul>
+      </aside>
     </header>
+    
 
     <section id="carousel">
       <div class="carousel-image fade">
@@ -109,45 +137,55 @@
 
     <section id="produtos">
       <h1>Produtos</h1>
+
       <div class="container-produtos">
         <div class="card-produtos hide">
           <header>
-            <img src="public/img/anel1.webp" alt="">
+            <a href="./public/views/produto-interno.html">
+              <img src="public/img/anel1.webp" alt="">
+            </a>
           </header>
           <footer>
             <p class="lancamento">Lançamento</p>
             <p>Anel de Diamantes</p>
             <p>R$ 51.200,00</p>
             <p>10x sem juros de R$5.200,00</p>
+            <a href="./public/views/pagina-carrinho.html">Adicione ao carrinho</a>
           </footer>
         </div>
 
         <div class="card-produtos">
           <header>
-            <img src="public/img/anel1.webp" alt="">
+            <a href="./public/views/produto-interno.html">
+              <img src="public/img/anel1.webp" alt="">
+            </a>
           </header>
           <footer>
             <p class="lancamento">Lançamento</p>
             <p>Anel de Diamantes</p>
             <p>R$ 51.200,00</p>
             <p>10x sem juros de R$5.200,00</p>
+            <a href="#">Adicione ao carrinho</a>
           </footer>
         </div>
 
         <div class="card-produtos hide">
           <header>
-            <img src="public/img/anel1.webp" alt="">
+            <a href="./public/views/produto-interno.html">
+              <img src="public/img/anel1.webp" alt="">
+            </a>
           </header>
           <footer>
             <p class="lancamento">Lançamento</p>
             <p>Anel de Diamantes</p>
             <p>R$ 51.200,00</p>
             <p>10x sem juros de R$5.200,00</p>
+            <a href="#">Adicione ao carrinho</a>
           </footer>
         </div>
 
-        <a class="prev">&#10094;</a>
-        <a class="next">&#10095;</a>
+        <a id="prev">&#10094;</a>
+        <a id="next">&#10095;</a>
       </div>
 
       <div id="contador-produtos">
@@ -183,5 +221,4 @@
 
   </body>
 
- <!-- <script src="./public/javascript/home.js" defer></script> -->
 </html>

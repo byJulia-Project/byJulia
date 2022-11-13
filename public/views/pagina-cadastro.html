@@ -1,40 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login byJulia</title>
-  <link rel="stylesheet" href="./styles/style-login.css">
+  <link rel="stylesheet" href="./styles/style-cadastro.css">
+  <title>Document</title>
 </head>
 <body>
 
-  <section class="left-side">
-  <h1>byJulia</h1>
-
-    
-    <form class="login-form">
-      <label class="title-form">Entrar</label>
-
-      <div class="campo-login">
-        <label for="email">E-mail</label>
-        <input type="email" name="login" id="email" placeholder="Digite seu e-mail">
-      </div>
-
-      <div class="campo-login">
-        <label for="senha">Senha</label>
-        <input type="password" name="login" id="senha" placeholder="Digite sua senha">
-      </div>
-      
-      <h8 id="cadastro-text"><a href="./pagina-cadastro.html">Clique aqui para realizar o cadastro</a></h8>
-
-      <button id="button-login" type="submit">Entrar</button>
-    </form>
-  </section>
-
-  <section class="right-side hide">
+  <section class="right-side">
     
     <form class="cadastro-form">
+      <div class="errors">
+        <ul></ul>
+      </div>
       <label class="titulo-cadastro">Crie sua conta</label>
       <div class="campo-cadastro">
         <label for="usuario">Usuário</label>
@@ -54,7 +34,7 @@
 
     <h1>byJulia</h1>
   </section>
-
+  
 </body>
 <script src="../javascript/cadastro-form.js" defer></script>
 </html>

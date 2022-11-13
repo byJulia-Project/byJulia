@@ -35,7 +35,7 @@ body > header {
   justify-content: space-between;
   background-color: var(--color-primary);
   opacity: 0.6;
-  position: sticky;
+  position: fixed;
   top: 1;
   z-index: 20;
   transition: ease-in-out 1s;
@@ -53,13 +53,13 @@ body > header:hover {
   margin-bottom: 0.8rem;
 }
 
-#header-list{
+nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-#header-list > a{
+nav a{
   text-decoration: none;
   color: #eafdf8;
   margin: 0.9rem;
@@ -68,9 +68,50 @@ body > header:hover {
   transition: 1s;
 }
 
-#header-list > a:hover{
+nav > a:hover{
   color: #725752;
   border-bottom: 1px solid #f06060;
+}
+
+.dropdown{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+nav > .dropdown > a:hover, dropdown:hover .dropbtn{
+  color: #725752;
+  border-bottom: 1px solid #f06060;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  top: 6.2rem;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 9;
+}
+
+.dropdown-content a{
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.dropdown-content a:hover{
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
 }
 
 #menu-search{
@@ -99,6 +140,97 @@ body > header:hover {
   color: var(--color-secondary);
   margin-left: 0.8rem;
   margin-right: 0.8rem;
+}
+
+#container-hamburguer{
+  z-index: 10;
+  display: none;
+}
+
+#container-hamburguer label{
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 22px;
+  width: 30px;
+}
+
+#container-hamburguer label span{
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 100%;
+  border-radius: 30px;
+  background-color: #f16234;
+  transition: 0.25s ease-in-out;
+}
+
+#container-hamburguer label #line1{
+  top: 0;
+  transition: 1s;
+}
+
+#container-hamburguer label #line2{
+  top: 8px;
+  transition: 0.5s;
+}
+
+#container-hamburguer label #line3{
+  top: 16px;
+  transition: 1s;
+}
+
+.show-menu #line1{
+  transform: rotate(-45deg) translate(-10px, 7px);
+}
+
+.show-menu #line2{
+  opacity: 0;
+}
+
+.show-menu #line3{
+  transform: rotate(45deg) translate(-5px);
+}
+
+#sidebar{
+  width: 10rem;
+  height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: -20rem;
+  transition: all 1s;
+}
+
+.show-menu #sidebar{
+  right: 0;
+}
+
+.menu-bar{
+  position: relative;
+  top: 10rem;
+  right: 1rem;
+}
+
+.menu-bar li{
+  list-style-type: none;
+  margin-top: 0.8rem;
+}
+
+.menu-bar li:hover{
+  border-left: 1px solid var(--color-secondary);
+}
+
+.menu-bar li a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  transition: 300ms ease-in-out;
+}
+
+.menu-bar li a:hover{
+  color: grey;
+  filter: brightness(150%);
 }
 
 i {
@@ -245,7 +377,7 @@ i {
   margin: auto;
 }
 
-.prev, .next{
+#prev, #next{
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -259,21 +391,21 @@ i {
   transition: 1s ease;
 }
 
-.next{
+#next{
   right: 1rem;
 }
 
-.prev{
+#prev{
   left: 1rem;
 }
 
-.prev:hover, .next:hover {
+#prev:hover, #next:hover {
   transform: scale(1.5);
 }
 
 .card-produtos {
   width: 20rem;
-  height: 21rem;
+  height: 22rem;
   border: 0.8px solid #dddddd;
   margin: 0;
   margin-top: 0.9rem;
@@ -376,8 +508,17 @@ i {
     width: 100%;
     overflow-x: none;
   }
-  #header-list {
+
+  .header-list{
     display: none;
+  }
+  
+  nav{
+    display: none;
+  }
+
+  #container-hamburguer{
+    display: block;
   }
 
   .carousel-image > img{
