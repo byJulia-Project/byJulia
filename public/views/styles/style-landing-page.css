@@ -378,34 +378,6 @@ i {
   margin: auto;
 }
 
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -1rem;
-  padding: 0.2rem;
-  z-index: 2;
-  font-size: 2rem;
-  color: var(--color-secondary);
-  text-align: center;
-  transition: 1s ease;
-}
-
-.next {
-  right: 1rem;
-}
-
-.prev {
-  left: 1rem;
-}
-
-.prev:hover,
-.next:hover {
-  transform: scale(1.5);
-}
-
 .card-produtos {
   border: 0.8px solid #dddddd;
   margin: 0;
