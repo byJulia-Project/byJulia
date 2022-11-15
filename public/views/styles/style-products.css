@@ -428,7 +428,7 @@ i {
 }
 
 .card-produtos:hover img{
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .carregar-mais-produtos {
@@ -507,7 +507,7 @@ i {
 }
 
 @media (max-width: 720px) {
-  .container-produtos {
+  .produtos {
     gap: 0;
   }
 
