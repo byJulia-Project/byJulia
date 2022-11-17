@@ -288,7 +288,7 @@ i {
   flex-direction: column;
   align-items: center;
   background-color: white;
-  box-shadow: 0px 0px 31px -7px rgba(0,0,0,0.75);
+  box-shadow: 6px 1px 63px -34px rgba(0,0,0,0.75);
 }
 
 .card-best-sellers > header img {
@@ -513,53 +513,123 @@ i {
   width: 15rem;
 }
 
+/* Responsividade */
+
+@media (max-width:400px){
+  .navegue-categorias > div{
+    font-size: 4rem;
+  }
+}
+
 @media (max-width:720px){
+
+.class-produtos{
+  font-size: 1.30rem;
+}
 
 .container-produtos{
   gap:0;
 }
 
-  .card-produtos{
-    width: 11rem;
-    height: 16rem;
-  }
+.card-produtos{
+  width: 11rem;
+  height: 16rem;
+}
 
   
-  .card-produtos > header img {
-    width: 9rem;
-    height: 8rem;
-    margin-bottom: 0rem;
-  }
+.card-produtos > header img {
+  width: 9rem;
+  height: 8rem;
+  margin-bottom: 0rem;
+}
   
-  .card-produtos > footer {
+.card-produtos > footer {
     text-align: center;
     font-size: 0.60rem;
   }
   
-  .card-produtos > footer > .lancamento {
-    background-color: #feede4;
-    font-size: 0.50rem;
-    width: 5rem;
-    border-radius: 10px;
-    color: #fc926f;
-    margin-bottom: 0.40rem;
+.card-produtos > footer > .lancamento {
+  background-color: #feede4;
+  font-size: 0.50rem;
+  width: 5rem;
+  border-radius: 10px;
+  color: #fc926f;
+  margin-bottom: 0.40rem;
   }
   
-  .card-produtos > footer > .title-produto{
-    font-weight: 600;
-    margin-bottom: 0.30rem;
+.card-produtos > footer > .title-produto{
+  font-weight: 600;
+  margin-bottom: 0.30rem;
   }
   
-  .card-produtos > footer > .valor-produto{
-    font-weight: 700;
-  }
+.card-produtos > footer > .valor-produto{
+  font-weight: 700;
+}
   
-  .card-produtos > footer > .juros{
+.card-produtos > footer > .juros{
     margin-top: 0.15rem;
     color:rgb(91, 90, 90);
-  }
+}
 
-  /* Responsividade */
+.navegue-categorias > div *{
+  font-size: 1rem;
+}
+
+.navegue-categorias > img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.best-sellers{
+  gap:0;
+  padding: 0.50rem;
+}
+
+.best-sellers #titulo {
+  margin-bottom: 1rem;
+}
+
+.best-sellers #titulo *{
+  font-size: 1rem;
+}
+
+.card-best-sellers{
+  width: 7rem;
+  height: 9.50rem;
+  box-shadow: none;
+}
+
+.card-best-sellers > header img {
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 0rem;
+}
+  
+.card-best-sellers > footer {
+    text-align: center;
+    font-size: 0.47rem;
+  }
+  
+.card-best-sellers > footer > .lancamento {
+  font-size: 0.50rem;
+  width: 5rem;
+  border-radius: 10px;
+  margin-bottom: 0.40rem;
+  }
+  
+.card-best-sellers > footer > .title-produto{
+  font-weight: 600;
+  margin-bottom: 0.30rem;
+  }
+  
+.card-best-sellers > footer > .valor-produto{
+  font-weight: 700;
+}
+  
+.card-best-sellers > footer > .juros{
+    margin-top: 0.15rem;
+    color:rgb(91, 90, 90);
+}
 
 }
 
