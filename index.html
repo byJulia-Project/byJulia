@@ -11,11 +11,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" rel="stylesheet">
     <link
       rel="stylesheet"
       href="./public/views/styles/style-landing-page.css"
     />
-    <script src="./public/javascript/home.js" defer></script>
+    <script src="./public/javascript/carousel-banner.js" defer></script>
+    <script src="./public/javascript/menu-hamburguer.js" defer></script>
+    <script src="./public/javascript/carousel-products.js" defer></script>  	
     <title>byJulia</title>
   </head>
   <body>
@@ -33,7 +36,6 @@
             <a href="./public/views/pagina-products.html">Relógios</a>
             <a href="./public/views/pagina-products.html">Correntes</a>
             <a href="./public/views/pagina-products.html">Brincos</a>
-
           </div>
         </div>
         <a href="#">Sobre</a>
@@ -56,15 +58,21 @@
         ></a>
         <a href="./public/views/pagina-carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a>
       </div>
-      <aside id="menu-hamburguer-container">
-        <div id="container-hamburguer">
-          <input type="checkbox" id="checkbox-menu">
-          <label for="checkbox-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
+
+      <div id="container-hamburguer">
+        <!-- <input type="checkbox" id="checkbox-menu"> -->
+        <label for="checkbox-menu">
+          <span id="line1"></span>
+          <span id="line2"></span>
+          <span id="line3"></span>
+        </label>
+      </div>
+      <aside id="sidebar">
+          <ul class="menu-bar">
+            <li><a href="#">Home</a></li>
+            <li><a href="./public/views/pagina-products.html" target="_parent">Produtos</a></li>
+            <li><a href="#">Sobre</a></li>
+          </ul>
       </aside>
     </header>
     
@@ -133,7 +141,9 @@
       <h1>Produtos</h1>
 
       <div class="container-produtos">
-        <div class="card-produtos hide">
+
+
+        <div class="card-produtos">
           <header>
             <a href="./public/views/produto-interno.html">
               <img src="public/img/anel1.webp" alt="">
@@ -145,6 +155,22 @@
             <p>R$ 51.200,00</p>
             <p>10x sem juros de R$5.200,00</p>
             <a href="./public/views/pagina-carrinho.html">Adicione ao carrinho</a>
+          </footer>
+        </div>
+
+
+        <div class="card-produtos">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="public/img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p>Anel de Diamantes</p>
+            <p>R$ 51.200,00</p>
+            <p>10x sem juros de R$5.200,00</p>
+            <a href="#">Adicione ao carrinho</a>
           </footer>
         </div>
 
@@ -162,8 +188,161 @@
             <a href="#">Adicione ao carrinho</a>
           </footer>
         </div>
-
-        <div class="card-produtos hide">
+        <div class="card-produtos">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="public/img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p>Anel de Diamantes</p>
+            <p>R$ 51.200,00</p>
+            <p>10x sem juros de R$5.200,00</p>
+            <a href="#">Adicione ao carrinho</a>
+          </footer>
+        </div>
+        <div class="card-produtos">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="public/img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p>Anel de Diamantes</p>
+            <p>R$ 51.200,00</p>
+            <p>10x sem juros de R$5.200,00</p>
+            <a href="#">Adicione ao carrinho</a>
+          </footer>
+        </div>
+        <div class="card-produtos">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="public/img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p>Anel de Diamantes</p>
+            <p>R$ 51.200,00</p>
+            <p>10x sem juros de R$5.200,00</p>
+            <a href="#">Adicione ao carrinho</a>
+          </footer>
+        </div>
+        <div class="card-produtos">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="public/img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p>Anel de Diamantes</p>
+            <p>R$ 51.200,00</p>
+            <p>10x sem juros de R$5.200,00</p>
+            <a href="#">Adicione ao carrinho</a>
+          </footer>
+        </div>
+        <div class="card-produtos">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="public/img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p>Anel de Diamantes</p>
+            <p>R$ 51.200,00</p>
+            <p>10x sem juros de R$5.200,00</p>
+            <a href="#">Adicione ao carrinho</a>
+          </footer>
+        </div>
+        <div class="card-produtos">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="public/img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p>Anel de Diamantes</p>
+            <p>R$ 51.200,00</p>
+            <p>10x sem juros de R$5.200,00</p>
+            <a href="#">Adicione ao carrinho</a>
+          </footer>
+        </div>
+        <div class="card-produtos">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="public/img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p>Anel de Diamantes</p>
+            <p>R$ 51.200,00</p>
+            <p>10x sem juros de R$5.200,00</p>
+            <a href="#">Adicione ao carrinho</a>
+          </footer>
+        </div>
+        <div class="card-produtos">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="public/img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p>Anel de Diamantes</p>
+            <p>R$ 51.200,00</p>
+            <p>10x sem juros de R$5.200,00</p>
+            <a href="#">Adicione ao carrinho</a>
+          </footer>
+        </div>
+        <div class="card-produtos">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="public/img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p>Anel de Diamantes</p>
+            <p>R$ 51.200,00</p>
+            <p>10x sem juros de R$5.200,00</p>
+            <a href="#">Adicione ao carrinho</a>
+          </footer>
+        </div>
+        <div class="card-produtos">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="public/img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p>Anel de Diamantes</p>
+            <p>R$ 51.200,00</p>
+            <p>10x sem juros de R$5.200,00</p>
+            <a href="#">Adicione ao carrinho</a>
+          </footer>
+        </div>
+        <div class="card-produtos">
+          <header>
+            <a href="./public/views/produto-interno.html">
+              <img src="public/img/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p>Anel de Diamantes</p>
+            <p>R$ 51.200,00</p>
+            <p>10x sem juros de R$5.200,00</p>
+            <a href="#">Adicione ao carrinho</a>
+          </footer>
+        </div>
+        <div class="card-produtos">
           <header>
             <a href="./public/views/produto-interno.html">
               <img src="public/img/anel1.webp" alt="">
@@ -178,22 +357,20 @@
           </footer>
         </div>
 
-        <a id="prev">&#10094;</a>
-        <a id="next">&#10095;</a>
-      </div>
 
-      <div id="contador-produtos">
-        <span class="produtos-cont"></span>
-        <span class="produtos-cont"></span>
-        <span class="produtos-cont"></span>
+        
+        
       </div>
     </section>
 
+
+    
+    
     <footer id="footer-principal">
       <section class="footer-sobre-nos">
         <h3>História</h3>
         <ul>
-          <li><a href="#">Por que byJulia?</a></l>
+          <li><a href="#">Por que byJulia?</a></ul>
           <li><a href="#">Nossos diferenciais</a></li>
           <li><a href="#">Membros</a></li>
         </ul>
@@ -213,6 +390,6 @@
 
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
   </body>
- 
 </html>
