@@ -8,6 +8,7 @@
   --color-footer: rgba(130, 142, 242, 0.5);
 }
 
+<<<<<<< HEAD
 * {
   margin: 0 auto;
   padding: 0 auto;
@@ -238,6 +239,8 @@ i {
   cursor: pointer;
 }
 
+=======
+>>>>>>> 619d2e30ed3109e38b8e568131e131e351c426b1
 .fa-user {
   margin: 0.4rem;
 }
@@ -431,6 +434,7 @@ i {
   border-radius: 2rem;
 }
 
+<<<<<<< HEAD
 /* F O O T E R */
 
 
@@ -501,6 +505,8 @@ i {
   width: 15rem;
 }
 
+=======
+>>>>>>> 619d2e30ed3109e38b8e568131e131e351c426b1
 /* Responsividade */
 @media screen and (max-width: 922px) {
   body {
