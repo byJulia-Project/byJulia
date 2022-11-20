@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <link rel="stylesheet" href="./styles/style-finalizacao-compras.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Formulário de Checkout</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="logo">byJulia</h1>
+        
+        <nav>
+          <a href="#">Home</a>
+          <div class="dropdown">
+            <a class="dropbtn">Produtos</a>
+            <div class="dropdown-content">
+              <a href="./public/views/pagina-products.html">Anéis</a>
+              <a href="./public/views/pagina-products.html">Relógios</a>
+              <a href="./public/views/pagina-products.html">Correntes</a>
+              <a href="./public/views/pagina-products.html">Brincos</a>
+            </div>
+          </div>
+          <a href="#">Sobre</a>
+        </nav>
+  
+        <div class="header-list">
+          <form id="menu-search">
+            <input
+              type="text"
+              id="products"
+              name="products"
+              placeholder="O que você procura hoje?"
+            />
+            <label for="products"
+              ><i class="fa-solid fa-magnifying-glass"></i>
+            </label>
+          </form>
+          <a href="./public/views/pagina-login.html" target="_self"
+            ><i class="fa-solid fa-user"></i
+          ></a>
+          <a href="./public/views/pagina-carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+  
+        <div id="container-hamburguer">
+          <!-- <input type="checkbox" id="checkbox-menu"> -->
+          <label for="checkbox-menu">
+            <span id="line1"></span>
+            <span id="line2"></span>
+            <span id="line3"></span>
+          </label>
+        </div>
+        <aside id="sidebar">
+            <ul class="menu-bar">
+              <li><a href="#">Home</a></li>
+              <li><a href="./public/views/pagina-products.html" target="_parent">Produtos</a></li>
+              <li><a href="#">Sobre</a></li>
+            </ul>
+        </aside>
+      </header>
+    <h1>Finalizar compra</h1>
+    <form action="url_para_enviar_dados_do_formulario" method="post">
+        <fieldset>
+            <h2>Endereço para entrega</h2>
+            <div class="input-duplo">
+                <div>
+                    <label for="nome">Nome: <span>*</span></label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+                </div>
+                <div>
+                    <label for="sobrenome">Sobrenome: <span>*</span></label>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome" required>
+                </div>
+            </div>
+            <div class="input-simples">
+                <label for="email">Email: <span>*</span></label>
+                <input type="email" name="email" id="email" placeholder="me@you.com" required>
+            </div>
+            <div class="input-simples">
+                <label for="endereco">Endereço: <span>*</span></label>
+                <input type="text" name="endereco" id="endereco" required>
+            </div>
+            <div class="input-duplo">
+                <div>
+                    <label for="cep">CEP: <span>*</span></label>
+                    <input type="text" name="cep" id="cep" required>
+                </div>
+                <div>
+                    <label for="localidade">Cidade: <span>*</span></label>
+                    <input type="text" name="localidade" id="localidade" required>
+                </div>
+                <div>
+                    <label for="estado">UF</label>
+                    <div class="select-wrapper">
+                        <select name="estado" id="estado" required>
+                            <option value="saoPaulo">SP</option>
+                            <option value="parana">PR</option>
+                            <option value="rioDeJaniro">RJ</option>
+                            <option value="minasGerais">MG</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <h2>Opção de envio</h2>
+            <div class="input-envio">
+                <div class="radio">
+                    <input class="" type="radio" name="opcao-envio" id="gratis" value="gratis">
+                    <label for="gratis">Grátis</label>
+                </div>
+                <div class="radio">
+                    <input class="" type="radio" name="opcao-envio" id="normal" value="normal">
+                    <label for="normal">Normal</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="opcao-envio" id="expresso" value="expresso">
+                    <label for="expresso">Expresso</label>
+                </div>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+    <footer id="footer-principal">
+        <section class="footer-sobre-nos">
+          <h3>História</h3>
+          <ul>
+            <li><a href="#">Por que byJulia?</a></l>
+            <li><a href="#">Nossos diferenciais</a></li>
+            <li><a href="#">Membros</a></li>
+          </ul>
+        </section>
+        <section class="footer-sobre-nos">
+          <h3>Lorem.</h3>
+          <ul>
+            <li><a href="#">Lorem, ipsum.</a></l>
+            <li><a href="#">Lorem, ipsum dolor.</a></li>
+            <li><a href="#">Lorem, ipsum dolor.</a></li>
+          </ul>
+        </section>
+        <section id="endereco">
+          <h3>Endereço</h3>
+          <img src="/public/img/maps.jpg" alt="">
+        </section>      
+  
+      </footer>
+</body>
+
+</html>
