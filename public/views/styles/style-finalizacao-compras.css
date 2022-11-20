@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;0,800;0,900;1,600&display=swap');
+
+:root{
+  --font-text: 'Montserrat', sans serif;
+  --font-title: 'Cormorant SC', sans serif;
+  --color-primary: #F2DA80;
+  --color-secondary: #F28D8D;
+  --color-footer: rgba(130, 142, 242, 0.5);
+}
+
+fieldset {
+    border: 0;
+    padding: 10;
+}
+
+fieldset > div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+label span {
+    color: red;
+}
+
+.input-duplo input, select {
+    border: 2px solid grey;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+}
+
+.select-wrapper select {
+    background: transparent;
+    box-shadow: none;
+    color: #666;
+    -webkit-appearance: none;
+    width: 100%;
+}
+
+.select-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.select-wrapper::after {
+    content: '< >';
+    color: #666;
+    font-size: 18px;
+    top: 8px;
+    right: 0;
+    transform: rotate(90deg);
+    position: absolute;
+    z-index: -1;
+}
+.input-simples input {
+    display: flex;
+    border: 2px solid grey;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+}
+
+.input-duplo {
+    display: flex;
+    gap: 5px
+    ;
+}
+
+.input-duplo > div {
+    width: 100%;
+}
+
+.input-envio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input :valid {
+    border: 2px solid green;
+}
+
+.input :valid {
+    border: 2px solid red;
+}
+
+button {
+    background: green;
+    border: 0;
+    color: white;
+    width: 222px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+  
+  @media screen and (max-width: 600px){
+    .header-list{
+      display: none;
+    }
+  
+    main{
+      width: 100%;
+      margin: 0 auto;
+    }
+  
+    main > h1{
+      font-size: 1.5rem;
+    }
+  
+    main > p{
+      font-size: 0.7rem;
+    }
+  
+    form{
+      width: 100%;
+    }
+  
+    .container-main{
+      width: 100%;
+    }
+  
+    .form-dados > label{
+      font-size: 1rem;
+    }
+  
+    .form-dados > input{
+      width: 15rem;
+    }
+  
+    form > button{
+      height: 2rem;
+      width: 10rem;
+      font-size: 1.6rem;
+    }
+}
