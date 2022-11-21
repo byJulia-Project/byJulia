@@ -18,7 +18,7 @@ formularioCadastro.addEventListener('submit', (event) => {
   
   verificaSenha(senha, errosSenha);
   
-  if(errosUsuario.length > 0){
+  if(errosUsuario.length > 0 || errosSenha.length > 0){
     event.preventDefault();
     errorUserMessage.style.display = 'block';
     errosUsuario.forEach(erro => {
