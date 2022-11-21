@@ -50,7 +50,7 @@ body > header {
 body > header:hover {
   opacity: 1;
 }
-git push
+
 #logo {
   font-size: 4rem;
   font-family: var(--font-title);
@@ -122,18 +122,29 @@ main {
    justify-content: center;
    padding: 4rem;
    align-items: center;
+   
 }
 .trabalhe-conosco{
   width: 50%;
   display:flex;
   flex-direction: column;
   gap: 1rem;
+  background-color: gray;
+  padding: 4rem;
+  box-shadow: 1px 1px 3px black;
 }
 .trabalhe-conosco>div{
   display:flex;
   align-items: center;
   flex-direction: column; 
   
+}
+.red{
+  color:red;
+  font-weight: 600;
+}
+.invisible{
+  display: none;
 }
 form{
   display:flex;
@@ -162,12 +173,14 @@ form div.boxes>div{
   align-items: center;
   gap: .3rem;
 }
+
 .trabalhe-conosco h1{
-   display: flex;
-   font-size:50px;
-   text-align: center;
-   color: rgba(0, 0, 0, 1);;
-   justify-content: start;
+  font-size: 50px;
+  text-align: center;
+}
+
+.trabalhe-conosco h1,label,h3{ 
+   color: white;
 }
 
 
@@ -181,7 +194,7 @@ form div.boxes>div{
    font-weight: 400;
    font-size: 20px;
    line-height: 21px;
-   color: #9B9B9B;
+   color: white;
    flex-direction: column;
 }
 .button input{
@@ -288,7 +301,8 @@ border-color: #9B9B9B;
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
-  background-color: #717171;
+  box-shadow: 15px 15px 30px black;
+  
 }
 
 .footer-sobre-nos{
@@ -302,7 +316,7 @@ border-color: #9B9B9B;
 
 .footer-sobre-nos > h3{
   font-family: var(--font-title);
-  color: white;  
+  color: black;  
   margin-bottom: 1rem;
 }
 
@@ -313,7 +327,7 @@ border-color: #9B9B9B;
 
 .footer-sobre-nos > ul > li > a{
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .footer-sobre-nos > ul > li > a:hover{
@@ -326,7 +340,7 @@ border-color: #9B9B9B;
 
 #endereco h3{
   font-family: var(--font-title);
-  color: white;
+  color: black;
   text-align: center;
   font-size: 2.5rem;
   

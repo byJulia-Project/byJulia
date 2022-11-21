@@ -127,14 +127,18 @@ main {
   flex-direction: column;
   display:flex;
   gap:10rem;
-
+  box-shadow: 1px 1px 4px gray;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  padding-left: 7%;
+  padding-right:7%;
 }
-
 .painel-do-usuário{
     display:flex;
     flex-direction: column;
     margin-bottom: 5rem;
     margin-top: 2rem;
+    
 }
 .painel-do-usuário>section{
   display:flex;
@@ -142,6 +146,7 @@ main {
   justify-content: space-between;
   width:90%;
   margin: auto;
+  
 }
 .painel-do-usuário>div{
   display:flex;
@@ -152,34 +157,34 @@ main {
 }
 .painel-do-usuário>div>h1{
   font-size: 3rem;
-
+  box-shadow: 1px 1px 3px gray;
 }
 .container-nome-idade>div>div{
   display: flex;
   gap: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+}
+.produtos{
+  display: flex;
+}
+.produtos>img{
+  width: 100%;
 }
 .container-ultimas-compras>div div{
-  height: 5rem;
-  width: 5rem;
-  background-color: #f06060;
-  
-
-}
-.container-ultimas-compras>div:last-child{
+  height: 10rem;
+  width: 10rem;
+  background-color: white;
   display: flex;
-  justify-content: flex-end;
-  gap: 1rem;
+  margin-bottom: 6rem;
 }
-.container-ultimas-compras>div:first-child{
-  margin-bottom: 3rem;
-
+.container-ultimas-compras div h2{
+  font-size: 2.1rem;
 }
 
 .container-nome-idade>img{
-  width: 10rem;
+  width: 12rem;
   border-radius: 50%;
-  height: 10rem;
+  height: 12rem;
   object-fit: cover;
   cursor: pointer;
 }
@@ -194,17 +199,26 @@ main {
   flex-direction: column;
   gap: 2rem;
   padding-top: 2rem;
+  box-shadow: 1px 1px 4px gray;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 .container-2 div span:first-child{
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 2.0rem;
 
+}
+.container-2 div p{
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 .container-2>div>div{
   display:flex;
   gap: 1rem;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 
@@ -218,7 +232,7 @@ main {
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
-    background-color: #717171;
+    box-shadow: 15px 15px 25px black;
   }
   
   .footer-sobre-nos{
@@ -228,22 +242,23 @@ main {
     flex-flow: column wrap;
     padding: 0.9rem;
     margin-bottom: 5rem;
+    
   }
   
   .footer-sobre-nos > h3{
     font-family: var(--font-title);
-    color: white;  
+    color: black;  
     margin-bottom: 1rem;
+    
   }
   
   .footer-sobre-nos > ul > li{
     list-style-type: none;
     margin-bottom: 1rem;
   }
-  
   .footer-sobre-nos > ul > li > a{
     text-decoration: none;
-    color: white;
+    color: black
   }
   
   .footer-sobre-nos > ul > li > a:hover{
