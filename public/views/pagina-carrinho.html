@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="./styles/style-pagina-carrinho.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="../javascript/menu-hamburguer.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -23,10 +24,10 @@
       <div class="dropdown">
         <a class="dropbtn">Produtos</a>
         <div class="dropdown-content">
-          <a href="./public/views/pagina-products.html">Anéis</a>
-          <a href="./public/views/pagina-products.html">Relógios</a>
-          <a href="./public/views/pagina-products.html">Correntes</a>
-          <a href="./public/views/pagina-products.html">Brincos</a>
+          <a href="./pagina-products.html">Anéis</a>
+          <a href="./pagina-products.html">Relógios</a>
+          <a href="./pagina-products.html">Correntes</a>
+          <a href="./pagina-products.html">Brincos</a>
         </div>
       </div>
       <a href="#">Sobre</a>
@@ -44,11 +45,27 @@
           ><i class="fa-solid fa-magnifying-glass"></i>
         </label>
       </form>
-      <a href="./public/views/pagina-login.html" target="_self"
+      <a href="./pagina-cadastro.html" target="_self"
         ><i class="fa-solid fa-user"></i
       ></a>
       <i class="fa-solid fa-cart-shopping"></i>
     </div>
+
+    <div id="container-hamburguer">
+      <!-- <input type="checkbox" id="checkbox-menu"> -->
+      <label for="checkbox-menu">
+        <span id="line1"></span>
+        <span id="line2"></span>
+        <span id="line3"></span>
+      </label>
+    </div>
+    <aside id="sidebar">
+        <ul class="menu-bar">
+          <li><a href="#">Home</a></li>
+          <li><a href="./pagina-products.html" target="_parent">Produtos</a></li>
+          <li><a href="#">Sobre</a></li>
+        </ul>
+    </aside>
   </header>
 
 
@@ -113,7 +130,7 @@
         </section>
         <section id="endereco">
           <h3>Endereço</h3>
-          <img src="public/img/maps.jpg" alt="">
+          <img src="/public/img/maps.jpg" alt="">
         </section>      
   
       </footer>
