@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;0,800;0,900;1,600&display=swap');
 
 :root{
-  --font-text: 'Montserrat', sans serif;
-  --font-title: 'Cormorant SC', sans serif;
+  --font-text: 'Montserrat', sans-serif;
+  --font-title: 'Cormorant SC', sans-serif;
   --color-primary: #fc926f;
   --color-secondary: #F28D8D;
 }
@@ -14,13 +14,13 @@ body > main{
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 10rem;
+  margin-top: 3rem;
 }
 
 main > h1{
   font-family: var(--font-title);
   font-size: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 #container{
@@ -100,9 +100,10 @@ figure > img{
 
 #resumoProdutos{
   display: flex;
-  align-items: center;
   flex-direction: column;
   justify-content: center;
+  /* align-items: center; */
+  margin-top: 2rem;
 }
 
 #resumoProdutos > h2{
@@ -138,4 +139,99 @@ figure > img{
 
 #resumoProdutos > a:hover{
   border-bottom: 1px solid black;
+}
+
+@media screen and (max-width: 1208px) {
+  figure > img {
+    width: 10rem;
+    margin-right: -25px;
+  }
+}
+  
+@media screen and (max-width: 1035px) {
+
+  body > main {
+    width: 100%;
+  }
+  .card-products{
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+  }
+  .card-button {
+    margin-bottom: 1rem;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+  #resumoProdutos > h2{
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  #resumoProdutos > h5{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  #resumoProdutos > button{
+    margin-top: 0.5rem;
+    border: 1px solid black;
+  }
+    
+  #resumoProdutos > a{
+    margin-top: 0.5rem;
+  }
+
+  #container {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 970px) {
+
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body > main {
+    margin-top: 1.5rem;
+  }
+
+  main > h1 {
+    margin-bottom: 0;
+  }
+
+  #container {
+    margin-top: 0;
+  }
+
+  #footer-principal {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 790px) {
+  #footer-principal {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 550px) {
+
+  main > h1 {
+    font-size: 2.5rem;
+  }
+
+  #container {
+    width: 100%;
+  }
+
+  .card-products {
+    width: 300px;
+  }
+
+  #footer-principal {
+    margin-top: 4.5rem;
+  }
 }

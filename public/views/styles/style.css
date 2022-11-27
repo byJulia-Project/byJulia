@@ -2,8 +2,8 @@
 
 
 :root {
-  --font-text: "Montserrat", sans serif;
-  --font-title: "Cormorant SC", sans serif;
+  --font-text: "Montserrat", sans-serif;
+  --font-title: "Cormorant SC", sans-serif;
   --color-primary: #fc926f;
   --color-secondary: #f28d8d;
   --color-footer: rgba(130, 142, 242, 0.5);
