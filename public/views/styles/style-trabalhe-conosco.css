@@ -8,24 +8,146 @@
   --color-footer: rgba(130, 142, 242, 0.5);
 }
 
+<<<<<<< HEAD
+=======
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header *, footer *{
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+body{
+  width: 100%;
+  font-family: var(--font-text);
+  
+}
+
+
+/* HEADER */
+#promotion {
+  text-align: center;
+  background-color: #725752;
+  color: #eafdf8;
+  height: 1.5rem;
+}
+
+body > header {
+  width: 100%;
+  height: 9.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-primary);
+  opacity: 0.6;
+  position: sticky;
+  top: 1;
+  z-index: 20;
+  transition: ease-in-out 1s;
+}
+
+body > header:hover {
+  opacity: 1;
+}
+
+#logo {
+  font-size: 4rem;
+  font-family: var(--font-title);
+  border-bottom: 2px solid var(--color-secondary);
+  font-weight: 300;
+  margin-bottom: 0.8rem;
+}
+
+#header-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header-list > a{
+  text-decoration: none;
+  color: #eafdf8;
+  margin: 0.9rem;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 1s;
+}
+
+#header-list > a:hover{
+  color: #725752;
+  border-bottom: 1px solid #f06060;
+}
+
+#menu-search{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-secondary);
+  padding-bottom: 0.2rem;
+}
+
+#menu-search > input{
+  color: #eafdf8;
+  background-color: var(--color-primary);
+  font-weight: 700;
+  font-size: 0.68rem;
+  border: none;
+}
+
+#menu-search > input:focus{
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+#menu-search > label > i {
+  font-size: 1rem;
+  color: var(--color-secondary);
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+}
+
+i {
+  cursor: pointer;
+}
+
+.fa-user {
+  margin: 0.4rem;
+}
+
+
+>>>>>>> waldemar
 main {
   display: flex;
    flex-direction: column;
    justify-content: center;
    padding: 4rem;
    align-items: center;
+   
 }
 .trabalhe-conosco{
   width: 50%;
   display:flex;
   flex-direction: column;
   gap: 1rem;
+  background-color: gray;
+  padding: 4rem;
+  box-shadow: 1px 1px 3px black;
 }
 .trabalhe-conosco>div{
   display:flex;
   align-items: center;
   flex-direction: column; 
   
+}
+.red{
+  color:red;
+  font-weight: 600;
+}
+.invisible{
+  display: none;
 }
 form{
   display:flex;
@@ -54,12 +176,14 @@ form div.boxes>div{
   align-items: center;
   gap: .3rem;
 }
+
 .trabalhe-conosco h1{
-   display: flex;
-   font-size:50px;
-   text-align: center;
-   color: rgba(0, 0, 0, 1);;
-   justify-content: start;
+  font-size: 50px;
+  text-align: center;
+}
+
+.trabalhe-conosco h1,label,h3{ 
+   color: white;
 }
 
 
@@ -73,7 +197,7 @@ form div.boxes>div{
    font-weight: 400;
    font-size: 20px;
    line-height: 21px;
-   color: #9B9B9B;
+   color: white;
    flex-direction: column;
 }
 .button input{
@@ -180,7 +304,8 @@ border-color: #9B9B9B;
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
-  background-color: #717171;
+  box-shadow: 15px 15px 30px black;
+  
 }
 
 .footer-sobre-nos{
@@ -194,7 +319,7 @@ border-color: #9B9B9B;
 
 .footer-sobre-nos > h3{
   font-family: var(--font-title);
-  color: white;  
+  color: black;  
   margin-bottom: 1rem;
 }
 
@@ -205,7 +330,7 @@ border-color: #9B9B9B;
 
 .footer-sobre-nos > ul > li > a{
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .footer-sobre-nos > ul > li > a:hover{
@@ -218,7 +343,7 @@ border-color: #9B9B9B;
 
 #endereco h3{
   font-family: var(--font-title);
-  color: white;
+  color: black;
   text-align: center;
   font-size: 2.5rem;
   

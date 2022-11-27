@@ -10,7 +10,9 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./styles/style-trabalhe-conosco.css" />
   <link rel="stylesheet" href="./styles/style.css">
+  <script src="../javascript/menu-hamburguer.js" defer></script>
   <title>byJulia Trabalhe Conosco</title>
+  <script src="../javascript/validacao-trabalhe-conosco.js" defer></script>
 </head>
 
 <body>
@@ -20,7 +22,7 @@
     <h1 id="logo">byJulia</h1>
     <nav id="header-list">
       <a href="#">Home</a>
-      <a href="./public/views/pagina-products.html">Produtos</a></li>
+      <a href="./pagina-products.html">Produtos</a></li>
       <a href="#">Sobre</a>
     </nav>
 
@@ -36,11 +38,27 @@
           ><i class="fa-solid fa-magnifying-glass"></i>
         </label>
       </form>
-      <a href="./public/views/pagina-login.html" target="_self"
+      <a href="./pagina-cadastro.html" target="_self"
         ><i class="fa-solid fa-user"></i
       ></a>
-      <a href="./public/views/pagina-carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a>
+      <a href="./pagina-carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a>
     </div>
+
+    <div id="container-hamburguer">
+      <!-- <input type="checkbox" id="checkbox-menu"> -->
+      <label for="checkbox-menu">
+        <span id="line1"></span>
+        <span id="line2"></span>
+        <span id="line3"></span>
+      </label>
+    </div>
+    <aside id="sidebar">
+        <ul class="menu-bar">
+          <li><a href="#">Home</a></li>
+          <li><a href="./pagina-products.html" target="_parent">Produtos</a></li>
+          <li><a href="#">Sobre</a></li>
+        </ul>
+    </aside>
   </header>
 
 
@@ -57,16 +75,19 @@
           <div>
             <label for="nome">Nome</label>
             <input type="text" id="nome" name="nome">
+            <div class="invisible err-nome red">Por favor, preencha seu nome.</div>
           </div>
 
           <div>
             <label for="email">Email</label>
             <input type="email" name="email" id="email">
+            <div class="invisible err-email red">Por favor, preencha seu email.</div>
           </div>
 
           <div>
             <label for="tel">Telefone</label>
             <input type="tel" name="tel" id="tel">
+            <div class="invisible err-tel red">Por favor, preencha seu Telefone.</div>
           </div>
 
           <div>
