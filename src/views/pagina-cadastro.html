@@ -5,31 +5,38 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/style-cadastro.css">
+  <script src="../javascript/cadastro-form.js" defer></script>
+
   <title>Document</title>
 </head>
 <body>
 
   <section class="right-side">
     
-    <form class="cadastro-form">
-      
+    <form class="cadastro-form" method="post" action="url_vai_aqui">
       <label class="titulo-cadastro">Crie sua conta</label>
       <div class="campo-cadastro">
-        <div class="errors">
-          <ul></ul>
-        </div>
         <label for="usuario">Usuário</label>
-        <input type="text" name="cadastro" id="user" placeholder="Digite seu usuario" required>
+        <input type="text" name="usuario" id="user" placeholder="Digite seu usuario">
       </div>
       <div class="campo-cadastro">
         <label for="email-cadastro">E-mail</label>
-        <input type="email" name="cadastro" id="email-cadastro" placeholder="Digite seu email" required>
+        <input type="email" name="email" id="email-cadastro" placeholder="Digite seu email">
       </div>
       <div class="campo-cadastro">
         <label for="senha-cadastro">Senha</label>
-        <input type="password" name="cadastro" id="senha-cadastro"placeholder="Digite sua senha" required>
+        <input type="password" name="senha" id="senha-cadastro"placeholder="Digite sua senha">
       </div>
-      <span id="password-status"></span>
+      <div class="campo-cadastro">
+        <label for="confirma-cadastro">Confirma Senha</label>
+        <input type="password" name="confirma-senha" id="confirma-cadastro"placeholder="Confirme sua senha">
+      </div>
+      <div class="senha-info">
+        <p>* A senha necessita ter mais de 6 caracteres</p>
+        <p>* É necessário um caractere especial</p>
+        <p>* É necessário um número</p>
+      </div>
+      
       <button id="button-cadastro" type="submit">Criar</button>
     </form>
     <h4>Já é usuário? Faça login <a href="./pagina-login.html">Clicando aqui</a></h4>
@@ -38,5 +45,4 @@
   </section>
   
 </body>
-<script src="../javascript/cadastro-form.js" defer></script>
 </html>

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;0,800;0,900;1,600&display=swap');
 
 :root{
-  --font-text: 'Montserrat', sans serif;
-  --font-title: 'Cormorant SC', sans serif;
+  --font-text: 'Montserrat', sans-serif;
+  --font-title: 'Cormorant SC', sans-serif;
   --color-primary: #F2DA80;
   --color-secondary: #F28D8D;
   --color-footer: rgba(130, 142, 242, 0.5);

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;0,800;0,900;1,600&display=swap');
 
 :root{
-  --font-title: 'Cormorant SC', sans serif;
-  --font-text: 'Montserrat', sans serif;
+  --font-title: 'Cormorant SC', sans-serif;
+  --font-text: 'Montserrat', sans-serif;
   --color-login: #FFA67D;
   --color-cadastro: #F2DA80;
 }
@@ -29,11 +29,6 @@
   font-size: 8rem;
   border-bottom: 5px solid #F28D8D;
   font-family: var(--font-title);
-}
-
-.cadastro-form .errors{
-  display: none;
-  border: 2px solid red;
 }
 
 .cadastro-form{
@@ -88,4 +83,12 @@
 
 #button-cadastro:hover{
   background: rgba(212, 0, 0, 0.6);
+}
+
+.error{
+  color: red;
+}
+
+form.cadastro-form div.senha-info{
+  display: none;
 }
