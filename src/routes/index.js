@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/trabalhe-conosco', function(req, res, next) {
-  res.render('pagina-trabalhe-conosco', { title: 'Express' });
+  res.render('pagina-trabalhe-conosco', { title: 'Express', nomePagina:'trabalhe-conosco' });
 });
 module.exports = router;
 
