@@ -1,89 +1,18 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="/stylesheets/style-products.css"/>
-    <link rel="stylesheet" href="/stylesheets/style.css">
-    <script src="/javascript/catalogo-card.js" defer></script>
-    <script src="/javascript/menu-hamburguer.js" defer></script>
-    <title>byJulia</title>
-  </head>
-  <body>
-    <section id="promotion">OFERTA 100% em todos os produtos</section>
-    <header>
-      <h1 id="logo">byJulia</h1>
-      <nav>
-        <a href="../../index.html">Home</a>
-        <div class="dropdown">
-          <a class="dropbtn">Produtos</a>
-          <div class="dropdown-content">
-            <a href="./pagina-products.html">Anéis</a>
-            <a href="./pagina-products.html">Relógios</a>
-            <a href="./pagina-products.html">Correntes</a>
-            <a href="./pagina-products.html">Brincos</a>
-
-          </div>
-        </div>
-        <a href="#">Sobre</a>
-      </nav>
-
-      <div class="header-list">
-        <form id="menu-search">
-          <input
-            type="text"
-            id="products"
-            name="products"
-            placeholder="O que você procura hoje?"
-          />
-          <label for="products"
-            ><i class="fa-solid fa-magnifying-glass"></i>
-          </label>
-        </form>
-        <a href="./pagina-cadastro.html" target="_self"
-          ><i class="fa-solid fa-user"></i
-        ></a>
-        <a href="./pagina-carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a>
-      </div>
-
-      <div id="container-hamburguer">
-        <!-- <input type="checkbox" id="checkbox-menu"> -->
-        <label for="checkbox-menu">
-          <span id="line1"></span>
-          <span id="line2"></span>
-          <span id="line3"></span>
-        </label>
-      </div>
-      <aside id="sidebar">
-          <ul class="menu-bar">
-            <li><a href="#">Home</a></li>
-            <li><a href="./pagina-products.html" target="_parent">Produtos</a></li>
-            <li><a href="#">Sobre</a></li>
-          </ul>
-      </aside>
-    </header>
+<%- include("partials/header") %>
 
     <main>
 
       <section id="carousel">
         <div class="carousel-image fade">
-          <img src="./public/img/banner.png" alt=""/>
+          <img src="images/banner.png" alt=""/>
         </div>
   
         <div class="carousel-image fade">
-          <img src="./public/img/banner2.png" alt=""/>
+          <img src="images/banner2.png" alt=""/>
         </div>
   
         <div class="carousel-image fade">
-          <img src="./public/img/banner3.png" alt=""/>
+          <img src="images/banner3.png" alt=""/>
         </div>
       </section>
       
@@ -101,14 +30,14 @@
         <div class="container-cards">
           <div class="card-categorias">
             <a href="./pagina-products.html"
-            ><img src="../img/aneis.jpg" alt="Vá para categoria anéis"
+            ><img src="images/aneis.jpg" alt="Vá para categoria anéis"
             /></a>
             <h2>Anéis</h2>
           </div>
           <div class="card-categorias">
             <a href="./pagina-products.html"
             ><img
-            src="../img/relogios.jpg"
+            src="images/relogios.jpg"
             alt="Vá para categoria Relógios"
             /></a>
             <h2>Relógios</h2>
@@ -116,7 +45,7 @@
           <div class="card-categorias">
             <a href="./pagina-products.html"
             ><img
-            src="../img/correntes.jpg"
+            src="images/correntes.jpg"
             alt="Vá para categoria Correntes"
             /></a>
             <h2>Correntes</h2>
@@ -124,7 +53,7 @@
           <div class="card-categorias">
             <a href="./pagina-products.html"
             ><img
-            src="../img/brincos.jpg"
+            src="images/brincos.jpg"
             alt="Vá para categoria brincos"
             /></a>
             <h2>Brincos</h2>
@@ -132,7 +61,7 @@
           <div class="card-categorias">
             <a href="./pagina-products.html"
             ><img
-            src="../img/alianca.png"
+            src="images/alianca.png"
             alt="Vá para categoria brincos"
             /></a>
             <h2>Alianças</h2>
@@ -148,7 +77,7 @@
         <div class="card-best-sellers">
           <header>
             <a href="./produto-interno.html">
-              <img src="../img/anel1.webp" alt="">
+              <img src="images/anel1.webp" alt="">
             </a>
           </header>
           <footer>
@@ -165,7 +94,7 @@
         <div class="card-best-sellers">
           <header>
             <a href="./produto-interno.html">
-              <img src="../img/anel1.webp" alt="">
+              <img src="images/anel1.webp" alt="">
             </a>
           </header>
           <footer>
@@ -198,7 +127,7 @@
         <div class="card-produtos">
           <header>
             <a href="./produto-interno.html">
-              <img src="../img/anel1.webp" alt="">
+              <img src="images/anel1.webp" alt="">
             </a>
           </header>
           <footer>
@@ -215,7 +144,7 @@
         <div class="card-produtos">
           <header>
             <a href="./produto-interno.html">
-              <img src="../img/anel1.webp" alt="">
+              <img src="images/anel1.webp" alt="">
             </a>
           </header>
           <footer>
@@ -232,7 +161,7 @@
         <div class="card-produtos">
           <header>
             <a href="./produto-interno.html">
-              <img src="../img/anel1.webp" alt="">
+              <img src="images/anel1.webp" alt="">
             </a>
           </header>
           <footer>
@@ -249,7 +178,7 @@
         <div class="card-produtos">
           <header>
             <a href="./produto-interno.html">
-              <img src="../img/anel1.webp" alt="">
+              <img src="images/anel1.webp" alt="">
             </a>
           </header>
           <footer>
@@ -266,7 +195,7 @@
         <div class="card-produtos">
           <header>
             <a href="./produto-interno.html">
-              <img src="../img/anel1.webp" alt="">
+              <img src="images/anel1.webp" alt="">
             </a>
           </header>
           <footer>
@@ -283,7 +212,7 @@
         <div class="card-produtos">
           <header>
             <a href="./produto-interno.html">
-              <img src="../img/anel1.webp" alt="">
+              <img src="images/anel1.webp" alt="">
             </a>
           </header>
           <footer>
@@ -300,7 +229,7 @@
         <div class="card-produtos">
           <header>
             <a href="./produto-interno.html">
-              <img src="../img/anel1.webp" alt="">
+              <img src="images/anel1.webp" alt="">
             </a>
           </header>
           <footer>
@@ -317,7 +246,7 @@
         <div class="card-produtos">
           <header>
             <a href="./produto-interno.html">
-              <img src="../img/anel1.webp" alt="">
+              <img src="images/anel1.webp" alt="">
             </a>
           </header>
           <footer>
@@ -333,24 +262,7 @@
         <div class="card-produtos">
           <header>
             <a href="./produto-interno.html">
-              <img src="../img/anel1.webp" alt="">
-            </a>
-          </header>
-          <footer>
-            <p class="lancamento">Lançamento</p>
-            <p class="title-produto">Anel de Diamantes</p>
-            <div class="div-valor-produtos">
-            <p class="valor-produto">R$ 51.200,00</p>
-            <p class="juros">10x sem juros de R$5.200,00</p>
-            <a href="./pagina-carrinho.html">Adicione ao carrinho</a>
-            </div>
-          </footer>
-        </div>
-
-        <div class="card-produtos">
-          <header>
-            <a href="./produto-interno.html">
-              <img src="../img/anel1.webp" alt="">
+              <img src="images/anel1.webp" alt="">
             </a>
           </header>
           <footer>
@@ -367,7 +279,7 @@
         <div class="card-produtos">
           <header>
             <a href="./produto-interno.html">
-              <img src="../img/anel1.webp" alt="">
+              <img src="images/anel1.webp" alt="">
             </a>
           </header>
           <footer>
@@ -384,7 +296,7 @@
         <div class="card-produtos">
           <header>
             <a href="./produto-interno.html">
-              <img src="../img/anel1.webp" alt="">
+              <img src="images/anel1.webp" alt="">
             </a>
           </header>
           <footer>
@@ -401,7 +313,7 @@
         <div class="card-produtos">
           <header>
             <a href="./produto-interno.html">
-              <img src="../img/anel1.webp" alt="">
+              <img src="images/anel1.webp" alt="">
             </a>
           </header>
           <footer>
@@ -418,7 +330,7 @@
         <div class="card-produtos">
           <header>
             <a href="./produto-interno.html">
-              <img src="../img/anel1.webp" alt="">
+              <img src="images/anel1.webp" alt="">
             </a>
           </header>
           <footer>
@@ -435,7 +347,7 @@
         <div class="card-produtos">
           <header>
             <a href="./produto-interno.html">
-              <img src="../img/anel1.webp" alt="">
+              <img src="images/anel1.webp" alt="">
             </a>
           </header>
           <footer>
@@ -452,7 +364,7 @@
         <div class="card-produtos">
           <header>
             <a href="./produto-interno.html">
-              <img src="../img/anel1.webp" alt="">
+              <img src="images/anel1.webp" alt="">
             </a>
           </header>
           <footer>
@@ -469,7 +381,7 @@
         <div class="card-produtos">
           <header>
             <a href="./produto-interno.html">
-              <img src="../img/anel1.webp" alt="">
+              <img src="images/anel1.webp" alt="">
             </a>
           </header>
           <footer>
@@ -486,7 +398,7 @@
         <div class="card-produtos">
           <header>
             <a href="./produto-interno.html">
-              <img src="../img/anel1.webp" alt="">
+              <img src="images/anel1.webp" alt="">
             </a>
           </header>
           <footer>
@@ -503,7 +415,7 @@
         <div class="card-produtos">
           <header>
             <a href="./produto-interno.html">
-              <img src="../img/anel1.webp" alt="">
+              <img src="images/anel1.webp" alt="">
             </a>
           </header>
           <footer>
@@ -520,7 +432,7 @@
         <div class="card-produtos">
           <header>
             <a href="./produto-interno.html">
-              <img src="../img/anel1.webp" alt="">
+              <img src="images/anel1.webp" alt="">
             </a>
           </header>
           <footer>
@@ -537,7 +449,24 @@
         <div class="card-produtos">
           <header>
             <a href="./produto-interno.html">
-              <img src="../img/anel1.webp" alt="">
+              <img src="images/anel1.webp" alt="">
+            </a>
+          </header>
+          <footer>
+            <p class="lancamento">Lançamento</p>
+            <p class="title-produto">Anel de Diamantes</p>
+            <div class="div-valor-produtos">
+            <p class="valor-produto">R$ 51.200,00</p>
+            <p class="juros">10x sem juros de R$5.200,00</p>
+            <a href="./pagina-carrinho.html">Adicione ao carrinho</a>
+            </div>
+          </footer>
+        </div>
+
+        <div class="card-produtos">
+          <header>
+            <a href="./produto-interno.html">
+              <img src="images/anel1.webp" alt="">
             </a>
           </header>
           <footer>
@@ -556,31 +485,4 @@
         <div id="logo"><h2>byJulia</h2></div>
         <div class="divisor-pagina2"></div>
     </main>
-
-    
-    <footer id="footer-principal">
-      <section class="footer-sobre-nos">
-        <h3>História</h3>
-        <ul>
-          <li><a href="#">Por que byJulia?</a></l>
-          <li><a href="#">Nossos diferenciais</a></li>
-          <li><a href="#">Membros</a></li>
-        </ul>
-      </section>
-      <section class="footer-sobre-nos">
-        <h3>Lorem.</h3>
-        <ul>
-          <li><a href="#">Lorem, ipsum.</a></l>
-          <li><a href="#">Lorem, ipsum dolor.</a></li>
-          <li><a href="#">Lorem, ipsum dolor.</a></li>
-        </ul>
-      </section>
-      <section id="endereco">
-        <h3>Endereço</h3>
-        <img src="../img/maps.jpg" alt="">
-      </section>      
-
-    </footer>
-
-  </body>
-  </html>
+    <%- include("partials/footer") %>
