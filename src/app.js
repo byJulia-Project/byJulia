@@ -22,7 +22,6 @@ app.use(express.static(path.join(__dirname, '../public')));
 
 app.use('/', indexRouter);
 app.use('/produtos',produtosRouter);
-app.use('/trabalhe',produtosRouter);
 app.use('/user', usersRouter);
 
 // catch 404 and forward to error handler
