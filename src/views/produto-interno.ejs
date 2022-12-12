@@ -1,0 +1,25 @@
+<%- include("partials/header") %>     
+
+    <main class="product_dados">
+        <div>
+            <h2 class="nome_produto">Anel Ouro Amarelo e Pedra de Diamante</h2>            
+            <img src="../img/anel1.webp" alt="anel de ouro com diamantes cravejados" class= "image-principal">
+            <div class= "image-principal_mini">
+                <img src="../img/anel1.webp" alt="anel de ouro com diamantes cravejados" class= "principal_mini">
+                <img src="../img/anel1.webp" alt="anel de ouro com diamantes cravejados" class= "principal_mini">
+            </div>
+        </div>
+        <div class="dados_compras">
+            <h3>Anel Ouro Amarelo e Pedra de Diamante</h3>
+            <p><strong>Preço:</strong> R$ 1.750,00</p>
+            <p><strong>Parcelamento:</strong> 10 x sem juros de R$ 175,00</p>
+            <div>
+                <button class="menos"><strong>-</strong></button>
+                <input inputmode="numeric" id="botao_quantidade">
+                <button class="mais"><strong>+</strong></button>
+            </div>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </main>
+    
+<%- include("partials/footer") %>

@@ -1,0 +1,34 @@
+<%- include("partials/header") %> 
+
+  <main>
+    <h1>Adicionar novos produtos</h1>
+    <form action="">
+      <div class="form-input">
+        <label for="produto">Produto</label>
+        <input type="text" name="produto" id="produto" placeholder="Digite o nome do produto" required>
+      </div>
+      <div class="form-input">
+        <label for="preco">Preço</label>
+        <input type="text" name="preco" id="preco" placeholder="Digite o preço do produto" value="R$" required>
+      </div>
+      <div class="form-input">
+        <label for="imagem">Imagem do produto</label>
+        <input type="file" name="imagem" accept=".jpg" multiple required>
+      </div>
+      <fieldset>
+        <legend>Tipo de produto</legend>
+        <input type="radio" name="type-product" value="lancamento" id="lancamento">
+        <label for="type-product">Lançamento</label>
+        <input type="radio" name="type-product" value="limitado" id="limitado">
+        <label for="type-product">Limitado</label>
+        <input type="radio" name="type-product" value="normal" id="normal" checked>
+        <label for="type-product">Produto Normal</label>
+      </fieldset>
+      <div id="btns">
+        <button class="btn" type="submit">Adicionar</button>
+        <button class="btn" type="reset">Resetar informações</button>
+      </div>
+    </form>
+  </main>
+
+<%- include("partials/footer") %>

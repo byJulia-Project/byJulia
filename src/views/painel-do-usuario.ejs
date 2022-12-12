@@ -1,38 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Byjulia painel do Usuário</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/stylesheets/style-painel-do-usuário.css" />
-
-</head>
-
-<body>
-    <section id="promotion">OFERTA 100% em todos os produtos</section>
-    <header>
-        <h1 id="logo">byJulia</h1>
-        <nav id="header-list">
-            <a href="#">Home</a>
-            <a href="/views/pagina-products.html">Produtos</a></li>
-            <a href="#">Sobre</a>
-        </nav>
-
-        <div class="header-list">
-            <form id="menu-search">
-                <input type="text" id="products" name="products" placeholder="O que você procura hoje?" />
-                <label for="products"><i class="fa-solid fa-magnifying-glass"></i>
-                </label>
-            </form>
-            <a href="/views/pagina-login.html" target="_self"><i class="fa-solid fa-user"></i></a>
-            <a href="/views/pagina-carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a>
-        </div>
-    </header>
+<%- include("partials/header") %>
     <main>
         <section class="painel-do-usuário">
             <div>
@@ -164,33 +130,4 @@
 
         </section>
     </main>
-    <footer id="footer-principal">
-        <section class="footer-sobre-nos">
-            <h3>História</h3>
-            <ul>
-                <li><a href="#">Por que byJulia?</a></l>
-                <li><a href="#">Nossos diferenciais</a></li>
-                <li><a href="#">Membros</a></li>
-            </ul>
-        </section>
-
-        <section class="footer-sobre-nos">
-            <h3>Lorem.</h3>
-            <ul>
-                <li><a href="#">Lorem, ipsum.</a></l>
-                <li><a href="#">Lorem, ipsum dolor.</a></li>
-                <li><a href="#">Lorem, ipsum dolor.</a></li>
-            </ul>
-        </section>
-
-        <section id="endereco">
-            <h3>Endereço</h3>
-            <img src="images/maps.jpg" alt="">
-        </section>
-
-    </footer>
-
-</body>
-
-</html>
-<script src="https://kit.fontawesome.com/1b82f5acb9.js" crossorigin="anonymous"></script>
+<%- include("partials/footer") %>
