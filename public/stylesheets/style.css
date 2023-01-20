@@ -129,16 +129,24 @@ dropdown:hover .dropbtn {
 }
 
 #menu-search > input {
-  color: #eafdf8;
-  background-color: var(--color-primary);
-  font-weight: 700;
-  font-size: 0.68rem;
   border: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 30%;
+  padding-left: 30px;
+
+  background: url(./search.png) no-repeat 10px/24px, #FFF;
+  cursor: pointer;
+  transition-property: width, border-radius, box-shadow;
+  transition-duration: 300ms;
 }
 
 #menu-search > input:focus {
-  box-shadow: 0 0 0 0;
-  outline: 0;
+  width: 240px;
+  border-radius: 4px;
+  box-shadow: 0 0 0 2px #12c8ff;
+  outline: none;
+  cursor: auto;
 }
 
 #menu-search > label > i {
