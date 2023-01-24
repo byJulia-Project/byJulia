@@ -1,219 +1,113 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" rel="stylesheet">
-    <link
-      rel="stylesheet"
-      href="stylesheets/style-landing-page.css"
-    />
-    <link rel="stylesheet" href="stylesheets/style.css">
-    <script src="javascript/carousel-banner.js" defer></script>
-    <script src="javascript/menu-hamburguer.js" defer></script>
-    <script src="javascript/carousel-products.js" defer></script>  	
-    <title>by 
-      Julia</title>
-  </head>
-  <body>
-
-    <section id="promotion">OFERTA 15% de desconto em sua primeira compra!</section>
-    <header id="header">
-      <h1 id="logo">by Julia</h1>
-      
-      <nav>
-        <a href="/pagina-carrinho">Home</a>
-        <div class="dropdown">
-          <a class="dropbtn">Produtos</a>
-          <div class="dropdown-content">
-            <a href="/produtos">Anéis</a>
-            <a href="/produtos">Relógios</a>
-            <a href="/produtos">Correntes</a>
-            <a href="/produtos">Brincos</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <a class="dropbtn">Sobre</a>
-          <div class="dropdown-content">
-            <a href="/pagina-carrinho">Membros</a>
-            <a href="/pagina-carrinho">Por que byJulia?</a>
-            <a href="./public/views/pagina-fale-conosco.html">Fale Conosco</a>
-            <a href="./public/views/pagina-trabalhe-conosco.html">Trabalhe Conosco</a>
-          </div>
-        </div>
-      </div>
-      </nav>
-
-      <div class="header-list">
-        <form id="menu-search">
-          <input
-            type="search"
-            class="search"
-            id="products"
-            name="products"
-            placeholder="O que você procura hoje?"
-          />
-          <label for="products"
-            ><i class="fa-solid fa-magnifying-glass"></i>
-          </label>
-        </form>
-        <a href="/painel-do-usuario" target="_self"
-          ><i class="fa-solid fa-user"></i>
-        </a>
-        <a href="/pagina-carrinho"><i class="fa-solid fa-cart-shopping"></i></a>
-      </div>
-
-      <div id="container-hamburguer">
-        <!-- <input type="checkbox" id="checkbox-menu"> -->
-        <label for="checkbox-menu">
-          <span id="line1"></span>
-          <span id="line2"></span>
-          <span id="line3"></span>
-        </label>
-      </div>
-      <aside id="sidebar">
-          <ul class="menu-bar">
-            <li><a href="/pagina-carrinho">Home</a></li>
-            <li><a href="/produtos" target="_parent">Produtos</a></li>
-            <li><a href="/pagina-carrinho">Sobre</a></li>
-          </ul>
-      </aside>
-    </header>
-    
-
-    <section id="carousel">
-      <div class="carousel-image fade">
-        <img src="images/banner.png" alt=""/>
-      </div>
-
-      <div class="carousel-image fade">
-        <img src="images/banner2.png" alt=""/>
-      </div>
-
-      <div class="carousel-image fade">
-        <img src="images/banner3.png" alt=""/>
-      </div>
-    </section>
-
-    <div id="container-banner">
-      <span class="image-cont"></span>
-      <span class="image-cont"></span>
-      <span class="image-cont"></span>
+<%- include("partials/header") %>
+  <section id="carousel">
+    <div class="carousel-image fade">
+      <img src="images/banner.png" alt="" />
     </div>
 
-    <div class="pag-divisor"></div>
+    <div class="carousel-image fade">
+      <img src="images/banner2.png" alt="" />
+    </div>
 
-    <section id="categorias">
-      <h1>CATEGORIAS</h1>
-      <div class="container-cards">
-        <div class="card-categorias">
-          <a href="/pagina-produtos"
-          ><img src="images/aneis.jpg" alt="Vá para categoria anéis"
-          /></a>
-          <h2>Anéis</h2>
-        </div>
-        <div class="card-categorias">
-          <a href="/produtos"
-          ><img
-          src="images/relogios.jpg"
-          alt="Vá para categoria Relógios"
-          /></a>
-          <h2>Relógios</h2>
-        </div>
-        <div class="card-categorias">
-          <a href="/produtos"
-          ><img
-          src="images/correntes.jpg"
-          alt="Vá para categoria Correntes"
-          /></a>
-          <h2>Correntes</h2>
-        </div>
-        <div class="card-categorias">
-          <a href="/produtos"
-          ><img
-          src="images/brincos.jpg"
-          alt="Vá para categoria brincos"
-          /></a>
-          <h2>Brincos</h2>
-        </div>
-        <div class="card-categorias">
-          <a href="/produtos"
-          ><img
-          src="images/alianca.png"
-          alt="Vá para categoria brincos"
-          /></a>
-          <h2>Alianças</h2>
-        </div>
+    <div class="carousel-image fade">
+      <img src="images/banner3.png" alt="" />
+    </div>
+  </section>
+
+  <div id="container-banner">
+    <span class="image-cont"></span>
+    <span class="image-cont"></span>
+    <span class="image-cont"></span>
+  </div>
+
+  <div class="pag-divisor"></div>
+
+  <section id="categorias">
+    <h1>CATEGORIAS</h1>
+    <div class="container-cards">
+      <div class="card-categorias">
+        <a href="/pagina-produtos"><img src="images/aneis.jpg" alt="Vá para categoria anéis" /></a>
+        <h2>Anéis</h2>
       </div>
-    </section>
+      <div class="card-categorias">
+        <a href="/produtos"><img src="images/relogios.jpg" alt="Vá para categoria Relógios" /></a>
+        <h2>Relógios</h2>
+      </div>
+      <div class="card-categorias">
+        <a href="/produtos"><img src="images/correntes.jpg" alt="Vá para categoria Correntes" /></a>
+        <h2>Correntes</h2>
+      </div>
+      <div class="card-categorias">
+        <a href="/produtos"><img src="images/brincos.jpg" alt="Vá para categoria brincos" /></a>
+        <h2>Brincos</h2>
+      </div>
+      <div class="card-categorias">
+        <a href="/produtos"><img src="images/alianca.png" alt="Vá para categoria brincos" /></a>
+        <h2>Alianças</h2>
+      </div>
+    </div>
+  </section>
 
-    <div class="pag-divisor"></div>
+  <div class="pag-divisor"></div>
 
-    <section id="produtos">
-      <h1>Produtos</h1>
+  <section id="produtos">
+    <h1>Produtos</h1>
 
-      <div class="container-produtos">
-
-
-        <div class="card-produtos">
-          <header>
-            <a href="./public/views/produto-interno.html">
-              <img src="images/anel1.webp" alt="">
-            </a>
-          </header>
-          <footer>
-            <p class="lancamento">Lançamento</p>
-            <p>Anel de Diamantes</p>
-            <p>R$ 51.200,00</p>
-            <p>10x sem juros de R$5.200,00</p>
-            <a href="./public/views/pagina-carrinho.html">Adicione ao carrinho</a>
-          </footer>
-        </div>
+    <div class="container-produtos">
 
 
-        <div class="card-produtos">
-          <header>
-            <a href="./public/views/produto-interno.html">
-              <img src="images/anel1.webp" alt="">
-            </a>
-          </header>
-          <footer>
-            <p class="lancamento">Lançamento</p>
-            <p>Anel de Diamantes</p>
-            <p>R$ 51.200,00</p>
-            <p>10x sem juros de R$5.200,00</p>
-            <a href="/pagina-carrinho">Adicione ao carrinho</a>
-          </footer>
-        </div>
-
-        <div class="card-produtos">
-          <header>
-            <a href="./public/views/produto-interno.html">
-              <img src="images/anel1.webp" alt="">
-            </a>
-          </header>
-          <footer>
-            <p class="lancamento">Lançamento</p>
-            <p>Anel de Diamantes</p>
-            <p>R$ 51.200,00</p>
-            <p>10x sem juros de R$5.200,00</p>
-            <a href="/pagina-carrinho">Adicione ao carrinho</a>
-          </footer>
-        </div>
+      <div class="card-produtos">
+        <header>
+          <a href="./public/views/produto-interno.html">
+            <img src="images/anel1.webp" alt="">
+          </a>
+        </header>
+        <footer>
+          <p class="lancamento">Lançamento</p>
+          <p>Anel de Diamantes</p>
+          <p>R$ 51.200,00</p>
+          <p>10x sem juros de R$5.200,00</p>
+          <a href="./public/views/pagina-carrinho.html">Adicione ao carrinho</a>
+        </footer>
       </div>
 
-      <div id="divisor-pagina1"></div>
-      <div id="logo"><h2>byJulia</h2></div>
-      <div class="divisor-pagina2"></div>
-    </section>
+
+      <div class="card-produtos">
+        <header>
+          <a href="./public/views/produto-interno.html">
+            <img src="images/anel1.webp" alt="">
+          </a>
+        </header>
+        <footer>
+          <p class="lancamento">Lançamento</p>
+          <p>Anel de Diamantes</p>
+          <p>R$ 51.200,00</p>
+          <p>10x sem juros de R$5.200,00</p>
+          <a href="/pagina-carrinho">Adicione ao carrinho</a>
+        </footer>
+      </div>
+
+      <div class="card-produtos">
+        <header>
+          <a href="./public/views/produto-interno.html">
+            <img src="images/anel1.webp" alt="">
+          </a>
+        </header>
+        <footer>
+          <p class="lancamento">Lançamento</p>
+          <p>Anel de Diamantes</p>
+          <p>R$ 51.200,00</p>
+          <p>10x sem juros de R$5.200,00</p>
+          <a href="/pagina-carrinho">Adicione ao carrinho</a>
+        </footer>
+      </div>
+    </div>
+
+    <div id="divisor-pagina1"></div>
+    <div id="logo">
+      <h2>byJulia</h2>
+    </div>
+    <div class="divisor-pagina2"></div>
+  </section>
+  <script src="javascript/carousel-banner.js" defer></script>
+  <%- include("partials/footer") %>
     
-    <%- include("partials/footer") %>
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js" defer></script>
