@@ -175,7 +175,7 @@ main {
   width: 10rem;
   background-color: white;
   display: flex;
-  margin-bottom: 6rem;
+  /* margin-bottom: 6rem;  */
 }
 .container-ultimas-compras div h2{
   font-size: 2.1rem;
