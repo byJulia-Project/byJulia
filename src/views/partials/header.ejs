@@ -11,38 +11,54 @@
   <link rel="stylesheet" href="stylesheets/style-<%=nomePagina%>.css" />
   <link rel="stylesheet" href="stylesheets/style.css">
   <title><%=title%></title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js" defer></script>
   <script src="javascript/menu-hamburguer.js" defer></script>
-  <script src="javascript/validacao-trabalhe-conosco.js" defer></script>
+  <!-- <script src="javascript/validacao-trabalhe-conosco.js" defer></script> -->
   <script src="javascript/carousel-products.js" defer></script> 
 </head>
 
 <body>
     
-  <section id="promotion">OFERTA 100% em todos os produtos</section>
+  <section id="promotion">OFERTA 15% de desconto em sua primeira compra!</section>
   <header>
-    <h1 id="logo">byJulia</h1>
+    <h1 id="logo">JewelrY Store</h1>
     <nav id="header-list">
       <a href="#">Home</a>
       <a href="/produtos">Produtos</a></li>
       <a href="#">Sobre</a>
     </nav>
-
+    
+    <div class="search-box">
+      <input class="search-txt" type="text" name=""  placeholder="O que você procura?">
+        
+      <a class="search-btn" href="#">
+      
+          <i class="fas fa-search"></i>
+      </a>
+    </div>
+    
     <div class="header-list">
+      
       <form id="menu-search">
-        <input
-          type="text"
-          id="products"
-          name="products"
-          placeholder="O que você procura hoje?"
-        />
-        <label for="products"
+      
+        
+         
+        
+        
+        
+    
+         
+         <!-- <label for="products"
           ><i class="fa-solid fa-magnifying-glass"></i>
-        </label>
+          </label> -->
+         <!-- </form> -->
+         <a href="/user" target="_self"
+         ><i class="fa-solid fa-user"></i
+         ></a>
+         <a href="/carrinho"><i class="fa-solid fa-cart-shopping"></i></a>
+        
       </form>
-      <a href="/user" target="_self"
-        ><i class="fa-solid fa-user"></i
-      ></a>
-      <a href="/carrinho"><i class="fa-solid fa-cart-shopping"></i></a>
     </div>
 
     <div id="container-hamburguer">
